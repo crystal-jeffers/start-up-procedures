@@ -166,3 +166,69 @@ main h2, main h3 {
   color: #1a1a1a;
   font-size: 0.9rem;
 }
+/* ---------- Bubble / chip containers (for pasting raw HTML inside a .md file) ---------- */
+.bubble-columns {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+}
+
+.bubble-column {
+  flex: 1 1 220px;
+  min-width: 200px;
+  border-radius: 14px;
+  padding: 0.75rem;
+  background: var(--color-grey-light);
+}
+
+.bubble-column h4 {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  color: #fff;
+  background: var(--color-black);
+  border-radius: 8px;
+  padding: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.bubble-column--a { background: #fdece0; }
+.bubble-column--b { background: #e4f2e6; }
+.bubble-column--c { background: #e3edf7; }
+
+.bubble {
+  background: #fff;
+  border-left: 4px solid var(--color-orange);
+  border-radius: 12px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.bubble:last-child { margin-bottom: 0; }
+
+.bubble-subgroup {
+  margin-top: 0.75rem;
+  border-radius: 10px;
+  padding: 0.6rem;
+  background: rgba(0,0,0,0.06);
+}
+
+.bubble-subgroup h4 {
+  font-size: 0.8rem;
+  margin: 0 0 0.5rem;
+  color: var(--color-black);
+  background: none;
+  padding: 0;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* ---------- Mermaid flowcharts (connected-box diagrams) ---------- */
+.mermaid {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
