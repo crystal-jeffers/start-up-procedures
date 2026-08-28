@@ -232,3 +232,7 @@ main h2, main h3 {
   margin: 1.5rem 0;
   overflow-x: auto;
 }
+/* Slight readability bump - headings scale up propotionally too since they use relative (em) sizing under the hood. Adjust 1.1rem up/down to taste */
+main {
+   font-size: 1.1rem;
+}
