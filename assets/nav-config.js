@@ -13,28 +13,64 @@
 
 const SOP_LIBRARY = [
   {
-    id: "ductwork-lod-checkpoint",
-    title: "Ductwork LOD Readiness Checkpoint",
-    file: "sops/ductwork-lod-checkpoint.md",
-    roles: ["apprentice", "tech", "lead", "pm"],
+    id: "start-up-lifecycle",
+    title: "Start-Up Lifecycle",
+    file: "sops/start-up-lifecycle.md",
+    roles: ["tech", "lead"],
     featured: ["tech", "lead"]
   },
   {
-    id: "rfi-submission-process",
-    title: "RFI Submission & Log Ownership",
-    file: "sops/rfi-submission-process.md",
-    roles: ["tech", "lead", "pm"],
-    featured: ["lead", "pm"]
+    id: "admin-info",
+    title: "Admin Info",
+    file: "sops/admin-info.md",
+    roles: ["lead"],
+    featured: ["lead"]
   },
   {
-    id: "field-reporting-app",
-    title: "Field Reporting App — Daily Use",
-    file: "sops/field-reporting-app.md",
-    roles: ["apprentice", "tech", "lead", "pm"],
-    featured: ["apprentice", "tech"]
+    id: "field-tasking",
+    title: "Field Tasking",
+    file: "sops/field-tasking.md",
+    roles: ["lead"],
+    featured: ["lead"]
+  },
+  {
+    id: "pre-start",
+    title: "Pre-Start",
+    file: "sops/pre-start.md",
+    roles: ["tech", "lead"],
+    featured: ["tech", "lead"]
+  },
+  {
+    id: "start-up",
+    title: "Start-Up",
+    file: "sops/start-up.md",
+    roles: ["tech", "lead"],
+    featured: ["tech", "lead"]
+  },
+  {
+    id: "commissioning",
+    title: "Commissioning",
+    file: "sops/commissioning.md",
+    roles: ["tech", "lead"],
+    featured: ["tech", "lead"]
+  },
+  {
+    id: "best-practices",
+    title: "Best Practices",
+    file: "sops/best-practices.md",
+    roles: ["tech", "lead"],
+    featured: []
+  },
+  {
+    id: "contacts",
+    title: "Contacts",
+    file: "sops/contacts.md",
+    roles: ["tech", "lead"],
+    featured: []
   }
 ];
 
+// Full label shown in the sticky header for each role
 const ROLE_LABELS = {
   apprentice: "Apprentice",
   tech: "Technician",
@@ -42,14 +78,11 @@ const ROLE_LABELS = {
   pm: "Project Manager"
 };
 
+// Extra shortcut buttons that appear ONLY in a given role's sticky header.
+// Leave the array empty ( [] ) for a role with no extra shortcuts.
 const ROLE_EXTRAS = {
   apprentice: [],
   tech: [],
-  lead: [
-    { label: "Escalation Contacts", file: "sops/escalation-contacts.md" }
-  ],
-  pm: [
-    { label: "Escalation Contacts", file: "sops/escalation-contacts.md" },
-    { label: "Cost Impact Log", file: "sops/cost-impact-log.md" }
-  ]
+  lead: [],
+  pm: []
 };
