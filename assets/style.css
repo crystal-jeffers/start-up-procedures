@@ -237,7 +237,7 @@ main p,
 main li,
 main .bubble,
 main .sop-title {
-   font-size: 1rem; /*16px. Bump to 1.05rem or 1.1rem later if still too small */
+   font-size: 1.1rem; /*16px. Bump to 1.05rem or 1.1rem later if still too small */
 }
 main h1 { font-size: 1.6rem; }
 main h2 { font-size: 1.3rem; }
