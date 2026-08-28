@@ -12,7 +12,6 @@ function renderHub(role) {
   document.getElementById("role-tag").textContent = ROLE_LABELS[role] + " View";
   document.title = "SOPs — " + ROLE_LABELS[role];
 
-  // Extra shortcut buttons for this role
   const extrasRow = document.getElementById("extras-row");
   const extras = ROLE_EXTRAS[role] || [];
   extras.forEach(e => {
@@ -26,7 +25,6 @@ function renderHub(role) {
   const featured = visible.filter(s => s.featured.includes(role));
   const rest = visible.filter(s => !s.featured.includes(role));
 
-  // Sticky-header "Sections" dropdown — jumps straight to any SOP from anywhere on the page
   const headerMenu = document.getElementById("jump-nav-menu");
   const headerToggle = document.getElementById("jump-nav-toggle");
   if (headerMenu && headerToggle) {
@@ -94,9 +92,15 @@ async function renderSopPage() {
 
   const res = await fetch(file);
   const mdText = await res.text();
-  const html = marked.parse(mdText);
+  const html = marked.parse(mdText, { breaks: true }); // single line breaks become <br>, no extra gap
   const contentDiv = document.getElementById("sop-content");
   contentDiv.innerHTML = html;
+
+  // Render any Mermaid flowchart blocks embedded in the SOP's markdown
+  if (window.mermaid) {
+    mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+    mermaid.run({ querySelector: ".mermaid" });
+  }
 
   if (entry.pdf) {
     const link = document.createElement("a");
@@ -123,6 +127,7 @@ async function renderSopPage() {
       menu.appendChild(a);
     });
 
+    toggle.addEventListener("click", () => toggle.classList.toggle("open"));
     toggle.addEventListener("click", () => menu.classList.toggle("open"));
   }
 }
