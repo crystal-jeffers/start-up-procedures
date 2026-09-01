@@ -1,52 +1,113 @@
 # Contacts
 
-## Tools & Purchasing
+<div class="contact-group">
+<h4>Tools & Purchasing</h4>
 
-**NC Tool Center:** NC_Tool_Center@southlandind.com
+<div class="contact-card">
+<div class="contact-name">NC Tool Center</div>
+<a href="mailto:NC_Tool_Center@southlandind.com">NC_Tool_Center@southlandind.com</a>
+</div>
 
-**Purchasing — Vincent Nigro:** 
-408-422-0430 · VNigro@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Vincent Nigro — Purchasing</div>
+<a href="tel:4084220430">408-422-0430</a>
+<a href="mailto:VNigro@southlandind.com">VNigro@southlandind.com</a>
+</div>
 
-## Safety
+</div>
 
-**NC Safety Manager — Avnit Kang:** 
-510-460-5985 · Akang@southlandind.com
+<div class="contact-group">
+<h4>Safety</h4>
 
-## Logistics
+<div class="contact-card">
+<div class="contact-name">Avnit Kang — NC Safety Manager</div>
+<a href="tel:5104605985">510-460-5985</a>
+<a href="mailto:Akang@southlandind.com">Akang@southlandind.com</a>
+</div>
 
-**NC Logistics — Derrick Brice:** 
-408-422-0469 · DBrice@southlandind.com
+</div>
 
-**Daniel Boles:** 
-510-246-2849 · DBoles@southlandind.com
+<div class="contact-group">
+<h4>Logistics</h4>
 
-**Tolo Maafu:** 
-510-246-5556 · TMaafu@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Derrick Brice — NC Logistics</div>
+<a href="tel:4084220469">408-422-0469</a>
+<a href="mailto:DBrice@southlandind.com">DBrice@southlandind.com</a>
+</div>
 
-**Camani Johnson (Sacramento):** 
-916-827-6329 · CJohnson@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Daniel Boles</div>
+<a href="tel:5102462849">510-246-2849</a>
+<a href="mailto:DBoles@southlandind.com">DBoles@southlandind.com</a>
+</div>
 
-## Timecards
+<div class="contact-card">
+<div class="contact-name">Tolo Maafu</div>
+<a href="tel:5102465556">510-246-5556</a>
+<a href="mailto:TMaafu@southlandind.com">TMaafu@southlandind.com</a>
+</div>
 
-**Monica Cervantes (NC):** 
-510-427-5085 · MCervantes@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Camani Johnson (Sacramento)</div>
+<a href="tel:9168276329">916-827-6329</a>
+<a href="mailto:CJohnson@southlandind.com">CJohnson@southlandind.com</a>
+</div>
 
-**Kristen Carwile (NC):** 
-510-566-9213 · KCarwile@southlandind.com
+</div>
 
-## Superintendents
+<div class="contact-group">
+<h4>Timecards</h4>
 
-**NC SM Super — Ron Heise:** 
-510-358-7785 · Rheise@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Monica Cervantes (NC)</div>
+<a href="tel:5104275085">510-427-5085</a>
+<a href="mailto:MCervantes@southlandind.com">MCervantes@southlandind.com</a>
+</div>
 
-**NC PF Super — John Brennan:** 
-408-210-5151 · jbrennan@southlandind.com
+<div class="contact-card">
+<div class="contact-name">Kristen Carwile (NC)</div>
+<a href="tel:5105669213">510-566-9213</a>
+<a href="mailto:KCarwile@southlandind.com">KCarwile@southlandind.com</a>
+</div>
 
-**Sac SM Super — Mike Vang:** 
-916-217-6503 · Mvang@southlandind.com
+</div>
 
-**Sac PF Super — Dave Keeling:** 916-268-0056 · david.keeling@southlandind.com
+<div class="contact-group">
+<h4>Superintendents</h4>
 
-## IT Support
+<div class="contact-card">
+<div class="contact-name">Ron Heise — NC SM Super</div>
+<a href="tel:5103587785">510-358-7785</a>
+<a href="mailto:Rheise@southlandind.com">Rheise@southlandind.com</a>
+</div>
 
-TechSupport@SouthlandInd.com
+<div class="contact-card">
+<div class="contact-name">John Brennan — NC PF Super</div>
+<a href="tel:4082105151">408-210-5151</a>
+<a href="mailto:jbrennan@southlandind.com">jbrennan@southlandind.com</a>
+</div>
+
+<div class="contact-card">
+<div class="contact-name">Mike Vang — Sac SM Super</div>
+<a href="tel:9162176503">916-217-6503</a>
+<a href="mailto:Mvang@southlandind.com">Mvang@southlandind.com</a>
+</div>
+
+<div class="contact-card">
+<div class="contact-name">Dave Keeling — Sac PF Super</div>
+<a href="tel:9162680056">916-268-0056</a>
+<a href="mailto:david.keeling@southlandind.com">david.keeling@southlandind.com</a>
+</div>
+
+</div>
+
+<div class="contact-group">
+<h4>IT Support</h4>
+
+<div class="contact-card">
+<div class="contact-name">IT Support</div>
+<a href="mailto:TechSupport@SouthlandInd.com">TechSupport@SouthlandInd.com</a>
+</div>
+
+</div>
