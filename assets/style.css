@@ -294,3 +294,20 @@ main h3 { font-size: 1.2rem; }
   font-size: 0.9rem;
   margin-top: 0.15rem;
 }
+/* Role/title line sits visually apart from the person's name below it */
+.contact-role {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  color: var(--color-orange);
+  margin-bottom: 0.2rem;
+}
+
+.contact-name {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-black);
+  margin-bottom: 0.3rem;
+}
