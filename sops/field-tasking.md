@@ -1,6 +1,6 @@
 # Field Tasking
 
-## Prestart
+## Pre-Start
 
 1. Highlight prints (software).
 2. Walk the airside with S/M personnel.
@@ -15,7 +15,7 @@
 8. Confirm vendor responsibilities.
 9. Verify schedule and power dates.
 
-## Work Begins
+## Start-Up
 
 10. Acquire all site safety gear for the crew.
 11. Set up jobsite Start-Up station.
@@ -31,10 +31,13 @@
 
 ---
 
+
+
+
 <div class="bubble-columns">
 
 <div class="bubble-column bubble-column--a">
-<h4>Pre Start</h4>
+<h4>Pre-Start</h4>
 <div class="bubble">Highlight prints (software)</div>
 <div class="bubble">Walk the airside with S/M personnel</div>
 <div class="bubble">Walk the wet side with P/F personnel</div>
@@ -52,7 +55,7 @@
 </div>
 
 <div class="bubble-column bubble-column--b">
-<h4>Work Begins</h4>
+<h4>Start-Up</h4>
 <div class="bubble">Acquire all site safety gear for the crew</div>
 <div class="bubble">Set up jobsite Start-Up station</div>
 <div class="bubble">Review workforce needs with Start-Up Superintendent (done weekly)</div>
