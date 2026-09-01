@@ -1,7 +1,8 @@
 # Contacts
 
-<div class="contact-group">
-<h4>Tools & Purchasing</h4>
+<details class="accordion">
+<summary>Tools & Purchasing</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-name">NC Tool Center</div>
@@ -16,9 +17,11 @@
 </div>
 
 </div>
+</details>
 
-<div class="contact-group">
-<h4>Safety</h4>
+<details class="accordion">
+<summary>Safety</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-role">NC Safety Manager</div>
@@ -28,9 +31,11 @@
 </div>
 
 </div>
+</details>
 
-<div class="contact-group">
-<h4>Logistics</h4>
+<details class="accordion">
+<summary>Logistics</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-role">NC Logistics</div>
@@ -59,9 +64,11 @@
 </div>
 
 </div>
+</details>
 
-<div class="contact-group">
-<h4>Timecards</h4>
+<details class="accordion">
+<summary>Timecards</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-role">NC</div>
@@ -78,9 +85,11 @@
 </div>
 
 </div>
+</details>
 
-<div class="contact-group">
-<h4>Superintendents</h4>
+<details class="accordion">
+<summary>Superintendents</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-role">NC SM Super</div>
@@ -111,9 +120,11 @@
 </div>
 
 </div>
+</details>
 
-<div class="contact-group">
-<h4>IT Support</h4>
+<details class="accordion">
+<summary>IT Support</summary>
+<div class="accordion-body">
 
 <div class="contact-card">
 <div class="contact-name">IT Support</div>
@@ -121,3 +132,4 @@
 </div>
 
 </div>
+</details>
