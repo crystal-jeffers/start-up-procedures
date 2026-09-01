@@ -374,3 +374,7 @@ details.accordion[open] > summary::after {
   background: #e2e2e2;
   margin: 0.5rem 10% 0 -1.2rem;
 }
+.contact-card a {
+   color: #1a73e8;
+   text-decoration: underline;
+}
