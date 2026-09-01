@@ -1,7 +1,7 @@
 Best Practices
 Day-to-day tasks and standard practices for all field personnel.
 <details class="accordion"> <summary>General Notes</summary> <div class="accordion-body">
-<ul class="chunked-list"> <li>**"Pass down" to the Project Lead**: completed goals, outstanding issues/problems, and/or
+<ul class="chunked-list"> <li><b>"Pass down" to the Project Lead</b>: completed goals, outstanding issues/problems, and/or
 deficiencies prior to emailing clients, the General Contractor, or the PM team.</li> <li>Lead tech should "CC" Start-Up
 Superintendent on all email correspondence.</li> <li>The lead technician supplies weekly written updates to the
 appropriate Start-Up Superintendent.</li> <li>Please notify the Start-Up Superintendent of any workforce changes or
