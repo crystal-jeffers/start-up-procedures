@@ -311,3 +311,66 @@ main h3 { font-size: 1.2rem; }
   color: var(--color-black);
   margin-bottom: 0.3rem;
 }
+/* ---------- Expandable sections (native <details>/<summary>, no JS needed) ---------- */
+details.accordion {
+  background: var(--color-grey-light);
+  border-radius: 16px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+details.accordion > summary {
+  cursor: pointer;
+  list-style: none;
+  background: var(--color-black);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+details.accordion > summary::-webkit-details-marker {
+  display: none;
+}
+
+details.accordion > summary::after {
+  content: "+";
+  font-size: 1.2rem;
+  color: var(--color-orange);
+  margin-left: 0.75rem;
+}
+
+details.accordion[open] > summary::after {
+  content: "\2013";
+}
+
+.accordion-body {
+  padding: 1rem;
+}
+
+/* Subtle inset divider after every 3rd item in a "chunked" list, for scan-ability */
+.chunked-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.chunked-list li {
+  padding: 0.3rem 0;
+}
+
+.chunked-list li:nth-child(3n) {
+  position: relative;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.chunked-list li:nth-child(3n)::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #e2e2e2;
+  margin: 0.5rem 10% 0 -1.2rem;
+}
