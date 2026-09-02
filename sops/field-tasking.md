@@ -1,43 +1,53 @@
 # Field Tasking
 
-## Pre-Start
+<div class="numbered-group">
+<h4>Pre Start</h4>
+<ol start="1">
+<li>Highlight prints (software).</li>
+<li>Walk the airside with S/M personnel.</li>
+<li>Walk the wet side with P/F personnel.</li>
+<li>Read and understand ALL documentation found in the Administrative Requirements (BOD, Submittals, IO&Ms, drawings, SOO, etc.).</li>
+<li>Document potential issues that could affect, delay, or prolong start of equipment.</li>
+<li>Confirm all required crew safety and tool certifications are up to date.</li>
+</ol>
+</div>
 
-1. Highlight prints (software).
-2. Walk the airside with S/M personnel.
-3. Walk the wet side with P/F personnel.
-4. Read and understand ALL documentation found in the Administrative Requirements (BOD, Submittals, IO&Ms, drawings, SOO, etc.).
-5. Document potential issues that could affect, delay, or prolong start of equipment.
-6. Confirm all required crew safety and tool certifications are up to date.
+<div class="numbered-group">
+<h4>With PM Team</h4>
+<ol start="7">
+<li>Develop an equipment status tracker.</li>
+<li>Confirm vendor responsibilities.</li>
+<li>Verify schedule and power dates.</li>
+</ol>
+</div>
 
-## With PM Team
+<div class="numbered-group">
+<h4>Work Begins</h4>
+<ol start="10">
+<li>Acquire all site safety gear for the crew.</li>
+<li>Set up jobsite Start-Up station.</li>
+<li>Review workforce needs with Start-Up Superintendent (done weekly).</li>
+<li>Track all required tools and meters in the Start-Up station.</li>
+<li>Track non-Start-Up tasking.</li>
+<li>Track equipment status.</li>
+</ol>
+</div>
 
-7. Develop an equipment status tracker.
-8. Confirm vendor responsibilities.
-9. Verify schedule and power dates.
-
-## Start-Up
-
-10. Acquire all site safety gear for the crew.
-11. Set up jobsite Start-Up station.
-12. Review workforce needs with Start-Up Superintendent (done weekly).
-13. Track all required tools and meters in the Start-Up station.
-14. Track non-Start-Up tasking.
-15. Track equipment status.
-
-## Commissioning
-
-16. Coordinate with SI wet/dry on system readiness, inspections, etc.
-17. Update lessons learned logbook.
+<div class="numbered-group">
+<h4>Closeout</h4>
+<ol start="16">
+<li>Coordinate with SI wet/dry on system readiness, inspections, etc.</li>
+<li>Update lessons learned logbook.</li>
+</ol>
+</div>
 
 ---
 
-
-
-
 <div class="bubble-columns">
-
 <div class="bubble-column bubble-column--a">
-<h4>Pre-Start</h4>
+<details class="accordion">
+<summary>Pre Start</summary>
+<div class="accordion-body">
 <div class="bubble">Highlight prints (software)</div>
 <div class="bubble">Walk the airside with S/M personnel</div>
 <div class="bubble">Walk the wet side with P/F personnel</div>
@@ -53,9 +63,13 @@
 </div>
 
 </div>
+</details>
+</div>
 
 <div class="bubble-column bubble-column--b">
-<h4>Start-Up</h4>
+<details class="accordion">
+<summary>Work Begins</summary>
+<div class="accordion-body">
 <div class="bubble">Acquire all site safety gear for the crew</div>
 <div class="bubble">Set up jobsite Start-Up station</div>
 <div class="bubble">Review workforce needs with Start-Up Superintendent (done weekly)</div>
@@ -63,11 +77,17 @@
 <div class="bubble">Track non-Start-Up tasking</div>
 <div class="bubble">Track equipment status</div>
 </div>
+</details>
+</div>
 
 <div class="bubble-column bubble-column--c">
-<h4>Closeout</h4>
+<details class="accordion">
+<summary>Closeout</summary>
+<div class="accordion-body">
 <div class="bubble">Coordinate with SI wet/dry on system readiness, inspections, etc.</div>
 <div class="bubble">Update lessons learned logbook</div>
+</div>
+</details>
 </div>
 
 </div>
