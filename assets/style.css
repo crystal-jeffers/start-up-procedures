@@ -378,3 +378,56 @@ details.accordion[open] > summary::after {
    color: #1a73e8;
    text-decoration: underline;
 }
+/* ---------- Chunked-list fixes: only first-layer items get dividers, ---------- */
+/* ---------- and spacing above/below the divider is now balanced. ---------- */
+.chunked-list > li:nth-child(3n) {
+  position: relative;
+  padding-bottom: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.chunked-list > li:nth-child(3n)::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 0;
+  height: 1px;
+  background: #e2e2e2;
+}
+
+/* Manual spacer — drop <li class="list-spacer"></li> between any two items
+   inside a chunked-list (or plain list) to add breathing room by hand,
+   since blank lines in the source do nothing once it's raw HTML. */
+.chunked-list > li.list-spacer,
+li.list-spacer {
+  height: 0.75rem;
+  padding: 0;
+  list-style: none;
+}
+
+/* Numbered "grouped bubble" — a whole numbered range inside one card
+   (e.g. steps 1–6 of a process grouped under one heading) */
+.numbered-group {
+  background: #fff;
+  border-left: 4px solid var(--color-orange);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.numbered-group h4 {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: var(--color-black);
+}
+
+.numbered-group ol {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.numbered-group li {
+  padding: 0.2rem 0;
+}
