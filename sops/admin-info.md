@@ -8,9 +8,10 @@ Work with the PM team to acquire or create the project information/items listed 
 <li>Job address, site map, and parking requirements.</li>
 <li>Job number, cost codes, non-start-up task codes, and folder links.</li>
 <li>Job site contact list.</li>
-<li>Project file in Forma (see template: insert link here).</li>
+<li>Project file in <b>Forma</b></li>
+<li>(see template: insert link here).</li>
 <li>Job-specific safety requirements.</li>
-<li>Project information:
+<li><b>Project information:</b>
 <ul>
 <li>BOD</li>
 <li>Equipment Submittals</li>
@@ -21,9 +22,9 @@ Work with the PM team to acquire or create the project information/items listed 
 <li>Vendor List</li>
 </ul>
 </li>
-<li>Project milestones (critical schedule dates) and project priorities.</li>
+<li>Project milestones, critical schedule dates, and project priorities.</li>
 <li>Vendor startup responsibilities and SI prerequisites.</li>
-<li>Startup and commissioning documentation:
+<li><b>Startup and commissioning documentation:</b>
 <ul>
 <li>Verify the correct startup documentation is available.</li>
 <li>Verify startup docs reflect actual equipment.</li>
