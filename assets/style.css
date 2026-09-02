@@ -454,3 +454,8 @@ li.list-spacer {
 .numbered-group {
   margin-bottom: 0.6rem;
 }
+.bubble-column--a,
+.bubble-column--b,
+.bubble-column--c {
+   background: var(--color-grey-light);
+}
