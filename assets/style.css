@@ -454,10 +454,8 @@ li.list-spacer {
 .numbered-group {
   margin-bottom: 0.6rem;
 }
-.bubble-column,
-.bubble-column--a,
-.bubble-column--b,
-.bubble-column--c {
-   background: transparent;
-   padding: 0;
+@media (max-width: 700px) {
+   .bubble-column {
+      flex: none;
+   }
 }
