@@ -1,6 +1,7 @@
 <h1>Best Practices</h1>
 Day-to-day tasks and standard practices for all field personnel.
 
+
 <details class="accordion"> <summary>General Notes</summary> <div class="accordion-body">
 <ul class="chunked-list"> <li><b>"Pass down" to the Project Lead</b>: completed goals, outstanding issues/problems and/or deficiencies <b>prior to emailing clients</b>, the General Contractor, or the PM team.</li> <li>"CC" Start-Up Superintendent on all email correspondence.</li> <li>Lead tech supplies <b>weekly written updates</b> to their Start-Up Superintendent.</li> <li>Notify the Start-Up Superintendent of any workforce changes or concerns.</li> <li>Wear clean SI uniform shirts on service calls.</li> <li>Contact IT Helpdesk to resolve technical issues.</li> <li>Turn in timecards <b>before 8:00 AM on Friday</b> (weekend adjustments made on Monday morning).</li> <li><b>Time off requests</b> go through the Start-Up Superintendent
 by email.</li> </ul>
