@@ -431,3 +431,26 @@ li.list-spacer {
 .numbered-group li {
   padding: 0.2rem 0;
 }
+/* Cancel dividers on nested (second-layer) list items — the original rule
+   matched them by accident; this explicitly turns that back off. */
+.chunked-list li ul > li:nth-child(3n),
+.chunked-list li ol > li:nth-child(3n) {
+  position: static;
+  padding-bottom: 0.2rem;
+  margin-bottom: 0;
+}
+
+.chunked-list li ul > li:nth-child(3n)::after,
+.chunked-list li ol > li:nth-child(3n)::after {
+  content: none;
+}
+
+/* More breathing room for double-digit numbers (10, 11, 12...) so they
+   don't crowd the bubble's edge, and tighter vertical stacking between groups */
+.numbered-group ol {
+  padding-left: 1.7rem;
+}
+
+.numbered-group {
+  margin-bottom: 0.6rem;
+}
