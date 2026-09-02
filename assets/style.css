@@ -193,10 +193,6 @@ main h2, main h3 {
   font-size: 0.95rem;
 }
 
-.bubble-column--a { background: #fdece0; }
-.bubble-column--b { background: #e4f2e6; }
-.bubble-column--c { background: #e3edf7; }
-
 .bubble {
   background: #fff;
   border-left: 4px solid var(--color-orange);
