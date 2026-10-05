@@ -96,7 +96,7 @@ function renderHub(role) {
 function addSpacers(md) {
   return md.replace(/\r\n/g, "\n").replace(/\n[ \t]*\n((?:[ \t]*\n)+)/g, (m, extra) => {
     const count = (extra.match(/\n/g) || []).length;
-    return "\n\n" + '<div class="md-spacer"></div>\n\n'.repeat(count);
+    return "\n\n" + '<div class="md-spacer" style="height:1rem"></div>\n\n'.repeat(count);
   });
 }
 
