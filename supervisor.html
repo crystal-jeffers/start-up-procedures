@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOPs</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="sticky">
+<div class="top-row">
+<h1>Southland SOPs</h1>
+<button id="jump-nav-toggle">Sections ▾</button>
+</div>
+<span class="role-tag" id="role-tag"></span>
+<div id="jump-nav-menu"></div>
+<div class="extras-row" id="extras-row"></div>
+</header>
+<main>
+<a class="back-link" href="index.html">‹ Switch role</a>
+<div id="sop-list"></div>
+</main>
+<script src="assets/nav-config.js"></script>
+<script src="assets/render.js"></script>
+<script>renderHub("supervisor");</script>
+</body>
+</html>
