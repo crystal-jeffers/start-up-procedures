@@ -14,7 +14,7 @@
 </div>
 <span class="role-tag" id="role-tag"></span>
 <div id="jump-nav-menu"></div>
-<div class="extras-row" id="extras-row"><a href="index.html">All role views</a></div>
+<div class="extras-row" id="extras-row"></div>
 </header>
 <main>
 <div id="sop-list"></div>
@@ -22,7 +22,6 @@
 <script src="assets/nav-config.js"></script>
 <script src="assets/render.js"></script>
 <script>
-  // If the config fails to load, say so instead of showing a blank page.
   if (typeof SOP_LIBRARY === "undefined" || typeof renderHub === "undefined") {
     document.getElementById("sop-list").innerHTML =
       "<p><strong>Couldn't load the SOP list.</strong> assets/nav-config.js or assets/render.js is missing or has an error.</p>";
