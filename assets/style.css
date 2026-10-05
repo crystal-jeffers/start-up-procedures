@@ -571,3 +571,18 @@ li.list-spacer {
 }
 .role-switch:hover,
 .role-switch:focus-visible { background: var(--color-grey); }
+/* Update 4: tables + bubble spacing */
+main table { min-width: 0; border: 1px solid #c4c4c4; }
+main th, main td {
+  text-align: left;
+  border: 1px solid #c4c4c4;
+  padding: 0.65rem 0.85rem;
+  line-height: 1.45;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+main th { background: var(--color-black); color: #fff; font-weight: 600; }
+@media (max-width: 560px) { main th, main td { padding: 0.55rem 0.65rem; } }
+
+.bubble, .numbered-group, .callout, details.accordion { margin-top: 1rem; margin-bottom: 1rem; }
+.bubble-column .bubble { margin-top: 0; margin-bottom: 0.75rem; }
