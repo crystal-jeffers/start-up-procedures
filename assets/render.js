@@ -59,7 +59,25 @@ function renderHub(role) {
     featured.forEach(s => addCard(s, true));
   }
 
-  if (rest.length) {
+  // Roles with a role switcher (see ROLE_SWITCHER in nav-config.js) show
+  // buttons for the other role views instead of "All other SOPs".
+  const switchTo = (typeof ROLE_SWITCHER !== "undefined" && ROLE_SWITCHER[role]) || null;
+  if (switchTo && switchTo.length) {
+    const label3 = document.createElement("div");
+    label3.className = "section-label";
+    label3.textContent = "See what each role sees";
+    container.appendChild(label3);
+    const grid = document.createElement("div");
+    grid.className = "role-switcher";
+    switchTo.forEach(r => {
+      const a = document.createElement("a");
+      a.href = r + ".html";
+      a.className = "role-switch";
+      a.textContent = ROLE_LABELS[r];
+      grid.appendChild(a);
+    });
+    container.appendChild(grid);
+  } else if (rest.length) {
     const label2 = document.createElement("div");
     label2.className = "section-label";
     label2.textContent = "All other SOPs";
@@ -67,33 +85,52 @@ function renderHub(role) {
     rest.forEach(s => addCard(s, false));
   }
 
-  if (!visible.length) {
+  if (!visible.length && !switchTo) {
     container.innerHTML = "<p>No SOPs assigned to this view yet.</p>";
   }
+}
+
+/* ---------- Extra blank lines in a .md file = extra space on the page ----------
+   Markdown normally collapses blank lines. Here, every blank line beyond the
+   first one becomes a spacer, so adding blank lines in the file adds space. */
+function addSpacers(md) {
+  return md.replace(/\r\n/g, "\n").replace(/\n[ \t]*\n((?:[ \t]*\n)+)/g, (m, extra) => {
+    const count = (extra.match(/\n/g) || []).length;
+    return "\n\n" + '<div class="md-spacer"></div>\n\n'.repeat(count);
+  });
 }
 
 /* ---------- SOP CONTENT PAGE (sop.html) ---------- */
 async function renderSopPage() {
   const role = getQueryParam("role") || "tech";
   const file = getQueryParam("file");
+  const contentDiv = document.getElementById("sop-content");
 
-  document.getElementById("role-tag").textContent = ROLE_LABELS[role] + " View";
+  document.getElementById("role-tag").textContent = (ROLE_LABELS[role] || "") + " View";
   document.getElementById("back-link").href = role + ".html";
 
   const entry = SOP_LIBRARY.find(s => s.file === file) ||
                 Object.values(ROLE_EXTRAS).flat().find(e => e.file === file);
 
   if (!entry) {
-    document.getElementById("sop-content").innerHTML = "<p>SOP not found.</p>";
+    contentDiv.innerHTML = "<p>SOP not found.</p>";
     return;
   }
 
   document.title = entry.title || entry.label;
 
-  const res = await fetch(file);
-  const mdText = await res.text();
-  const html = marked.parse(mdText, { breaks: true }); // single line breaks become <br>, no extra gap
-  const contentDiv = document.getElementById("sop-content");
+  let mdText;
+  try {
+    const res = await fetch(file);
+    if (!res.ok) throw new Error(res.status);
+    mdText = await res.text();
+  } catch (err) {
+    contentDiv.innerHTML = "<p><strong>Couldn't load this page.</strong> The file <code>" + file +
+      "</code> wasn't found (" + err.message + "). Check that it's in the right folder and the name matches exactly.</p>";
+    return;
+  }
+
+  const html = marked.parse(addSpacers(mdText), { breaks: true });
   contentDiv.innerHTML = html;
 
   // Render any Mermaid flowchart blocks embedded in the SOP's markdown
@@ -126,8 +163,6 @@ async function renderSopPage() {
       a.addEventListener("click", () => menu.classList.remove("open"));
       menu.appendChild(a);
     });
-
-    toggle.addEventListener("click", () => toggle.classList.toggle("open"));
     toggle.addEventListener("click", () => menu.classList.toggle("open"));
   }
 }
