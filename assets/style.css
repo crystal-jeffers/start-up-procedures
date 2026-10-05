@@ -532,3 +532,42 @@ li.list-spacer {
 @media (hover: none), (pointer: coarse) {
   .role-card .role-desc { display: none; }
 }
+/* ---------- Update 3: paste at the very bottom of style.css ---------- */
+
+/* Landing page text, one step smaller */
+.landing-heading { font-size: 1.6rem; }
+.landing-intro { font-size: 1.1rem; }
+.role-card .role-name { font-size: 1.25rem; }
+.role-card .role-desc { font-size: 1rem; }
+
+/* Extra blank lines in a .md file become extra space */
+.md-spacer { height: 1rem; }
+
+/* Breathing room between intro text and the first black section button */
+#sop-content p + details.accordion { margin-top: 1.25rem; }
+
+/* Supervisor role switcher: black buttons, like the Best Practices sections */
+.role-switcher {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.6rem;
+}
+@media (min-width: 560px) {
+  .role-switcher { grid-template-columns: 1fr 1fr; }
+}
+.role-switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 48px;
+  background: var(--color-black);
+  color: #fff;
+  border-radius: 16px;
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-right: 6px solid var(--color-orange);
+}
+.role-switch:hover,
+.role-switch:focus-visible { background: var(--color-grey); }
