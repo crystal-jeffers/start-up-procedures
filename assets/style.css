@@ -528,3 +528,7 @@ li.list-spacer {
 @media (prefers-reduced-motion: reduce) {
   .role-card, .role-card .role-desc { transition: none; }
 }
+/* Phones and tablets: role name only */
+@media (hover: none), (pointer: coarse) {
+  .role-card .role-desc { display: none; }
+}
