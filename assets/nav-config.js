@@ -122,3 +122,9 @@ const ROLE_EXTRAS = {
   ],
   pm: []
 };
+
+// Role switcher: roles listed here show buttons for these other role views
+// in place of the "All other SOPs" list.
+const ROLE_SWITCHER = {
+  supervisor: ["apprentice", "tech", "lead", "pm"]
+};
