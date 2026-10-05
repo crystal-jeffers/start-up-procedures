@@ -485,3 +485,46 @@ li.list-spacer {
   text-decoration: none;
   color: #1a1a1a;
 }
+/* =========================================================================
+   INDEX PAGE UPDATE — paste at the very bottom of style.css
+   (below the block you added last time). Later rules win, so nothing
+   above needs to be deleted.
+   ========================================================================= */
+
+/* Bigger text on the landing page */
+.landing-heading { font-size: 1.9rem; }
+.landing-intro { font-size: 1.2rem; }
+
+/* Southland orange edge on every role card */
+.role-card,
+.role-card--accent { border-left: 6px solid var(--color-orange); }
+
+.role-card {
+  padding: 1.25rem 1.3rem;
+  transition: background-color 0.15s ease;
+}
+.role-card .role-name { font-size: 1.45rem; }
+.role-card .role-desc { font-size: 1.05rem; }
+
+/* Desktop / mouse: show only the role name; description appears on hover
+   or keyboard focus. Phones and tablets can't hover, so they keep the
+   description visible underneath (otherwise it could never be seen). */
+@media (hover: hover) and (pointer: fine) {
+  .role-card .role-desc {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 0;
+    transition: max-height 0.2s ease, opacity 0.2s ease, margin-top 0.2s ease;
+  }
+  .role-card:hover .role-desc,
+  .role-card:focus-visible .role-desc {
+    max-height: 4rem;
+    opacity: 1;
+    margin-top: 0.35rem;
+  }
+  .role-card:hover { background: #fff7f0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .role-card, .role-card .role-desc { transition: none; }
+}
