@@ -2,10 +2,10 @@
 
 Goodbye monthly spreadsheet, hello Airtable dispatch board! Each assignment on the board is one record with a technician, job, type and date range.
 
-**Service Workspace** → **Dispatch Timeline** or **Dispatch Calendar**.
-
 <div class="callout"><strong>Who edits:</strong> supervisor only. 
-  Everyone else uses a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
+
+Everyone else uses a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
+
 
 ## Reading the board
 
@@ -14,22 +14,21 @@ Goodbye monthly spreadsheet, hello Airtable dispatch board! Each assignment on t
   <img src="assets/img/supervisor/timeline-overview.png" alt="Dispatch Timeline showing one row per technician across two weeks, bars colored by technician" loading="lazy">
 </figure>
 
-- **Rows** are technicians. One row per technician.
-- **Bars** are assignments. Each bar is one assignment.
-- **Colors:** each technician has their own color. Anyone **Out** shows in muted gray, so absences stand out at a glance.
-- **Weekends** are hidden. Weekend work still saves. Switch the view to show weekends when you need it.
-- **Timeline** is best for "who is where this week."
-- **Calendar** is best for "what's happening on this job this month."
+- **Rows**: One row per technician.
+- **Bars**: Each bar is one assignment.
+- **Colors:** Each technician has their own color. Anyone **Out** shows in gray, so absences stand out at a glance.
+- **Weekends** are hidden by default. Switch views to see weekends as needed.
+- **Timeline**: "who is where this week."
+- **Calendar**: "what's happening on this job this month."
 
 
 ## Filtering
 
-Use the **Technician** and **Job** dropdowns at the top of either page.
+Use the **Technician** and **Job** dropdowns at the top of either page. (Clear the filter to see everyone again)
 
 <!-- CAPTURE: Dispatch Calendar with the Job dropdown open. Save as assets/img/supervisor/filters.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
-  <figcaption>Clear the filter to see everyone again.</figcaption>
 </figure>
 
 ## Assignment types
@@ -54,9 +53,9 @@ Use the **Technician** and **Job** dropdowns at the top of either page.
 <div class="numbered-group">
 <h4>Add an assignment</h4>
 <ol>
-<li>On the Timeline, click <strong>+</strong> in the technician's row (or on the Calendar, click the start day).</li>
+<li>Click <strong>+</strong> in the technician's row or start day.</li>
 <li>Pick the <strong>Technician</strong>, <strong>Type</strong> and <strong>Job</strong>.</li>
-<li>Set <strong>Start Date</strong> and <strong>End Date</strong>. For one day, use the same date for both.</li>
+<li>Set <strong>Start Date</strong> and <strong>End Date</strong>.</li>
 <li>The label and color fill in on their own a few seconds later.</li>
 </ol>
 </div>
@@ -64,8 +63,8 @@ Use the **Technician** and **Job** dropdowns at the top of either page.
 <div class="numbered-group">
 <h4>Move or reassign</h4>
 <ol>
-<li><strong>Drag</strong> a bar left or right to change its dates.</li>
-<li><strong>Drag</strong> it to another technician's row to reassign it.</li>
+<li><strong>Drag</strong> bar left or right to change its dates.</li>
+<li><strong>Drag</strong> to another row to reassign.</li>
 <li>Drag either <strong>end</strong> of a bar to make it longer or shorter.</li>
 </ol>
 </div>
@@ -88,14 +87,12 @@ Use the **Technician** and **Job** dropdowns at the top of either page.
 
 
 
-<div class="callout"><strong>Primary – Do Not Pull:</strong> tick this when a tech is the primary on a job and must not be reassigned. Check it before you drag anyone off a job.</div>
 
 ## Absences and privacy
 
-- Book any absence as **Type = Out**. On every shared page it shows only as *Out*, in gray.
-- - **Holidays** live in their own list with the union locals that observe them. They don't appear on the board yet, so book holiday days as *Out* for the techs who take them.
-- Put the reason in **Supervisor Notes**. It never appears on the timeline, the calendar, or the read-only schedule.
+- Book absences as **Type = Out** and leave notes as needed. Shared pages only shows as *Out*, in gray.
 - **Notes** (without "Supervisor") are visible to everyone. Use them for job details like *"Steam blowdown Sunday."*
+- **Holidays** live in their own list with the union locals that observe them. They don't appear on the board yet, so book holiday days as *Out* for the techs who take them.
 
 
 ## Adding a new technician
