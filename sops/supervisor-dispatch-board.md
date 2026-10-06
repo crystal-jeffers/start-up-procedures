@@ -1,10 +1,15 @@
 # Dispatch Board
 
-Goodbye monthly spreadsheet, hello Airtable dispatch board! Each assignment on the board is one record with a technician, job, type and date range.
+Goodbye monthly spreadsheet, hello Airtable dispatch board! 
+Each assignment is one record with a technician, job, type and date range.
 
-<div class="callout"><strong>Who edits:</strong> supervisor only. 
+<div class="callout"><strong>Who edits?</strong> Supervisor only. 
 
-Everyone else uses a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
+Everyone else views a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
+
+<figure class="shot">
+  <img src="assets/img/supervisor/my-schedule-email.png">
+</figure>
 
 
 ## Reading the board
