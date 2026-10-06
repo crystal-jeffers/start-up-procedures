@@ -132,6 +132,7 @@ async function renderSopPage() {
 
   const html = marked.parse(addSpacers(mdText), { breaks: true });
   contentDiv.innerHTML = html;
+  enhanceContent(contentDiv);
 
   // Render any Mermaid flowchart blocks embedded in the SOP's markdown
   if (window.mermaid) {
@@ -165,4 +166,69 @@ async function renderSopPage() {
     });
     toggle.addEventListener("click", () => menu.classList.toggle("open"));
   }
+}
+
+/* ---------- Page polish: scrollable tables + tap-to-enlarge images ----------
+   Styles live here (not in style.css) so nothing needs to be pasted. */
+function injectEnhanceStyles() {
+  if (document.getElementById("enhance-styles")) return;
+  const css = `
+    #sop-content .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 1rem 0; }
+    #sop-content .table-scroll table { min-width: 560px; }
+    #sop-content th, #sop-content td { overflow-wrap: normal; word-break: normal; hyphens: none; }
+    #sop-content img { cursor: zoom-in; }
+    .lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.88);
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: env(safe-area-inset-top, 0px) 0.75rem env(safe-area-inset-bottom, 0px); cursor: zoom-out; }
+    .lightbox img { max-width: 100%; max-height: 85vh; object-fit: contain; border-radius: 6px; background: #fff; }
+    .lightbox p { color: #fff; margin: 0.75rem 0 0; font-size: 0.95rem; text-align: center; }
+    .lightbox .lb-close { position: absolute; top: calc(env(safe-area-inset-top, 0px) + 0.5rem); right: 0.75rem;
+      background: none; border: 0; color: #fff; font-size: 2rem; line-height: 1; min-width: 44px; min-height: 44px; cursor: pointer; }
+  `;
+  const style = document.createElement("style");
+  style.id = "enhance-styles";
+  style.textContent = css;
+  document.head.appendChild(style);
+}
+
+function enhanceContent(root) {
+  injectEnhanceStyles();
+
+  // Every table scrolls sideways inside its own box instead of squeezing words.
+  root.querySelectorAll("table").forEach(t => {
+    if (t.parentElement && t.parentElement.classList.contains("table-scroll")) return;
+    const wrap = document.createElement("div");
+    wrap.className = "table-scroll";
+    t.parentNode.insertBefore(wrap, t);
+    wrap.appendChild(t);
+  });
+
+  // Tap or click any image to see it full screen; tap again (or Esc) to close.
+  root.querySelectorAll("img").forEach(img => {
+    img.addEventListener("click", () => openLightbox(img));
+  });
+}
+
+function openLightbox(img) {
+  const box = document.createElement("div");
+  box.className = "lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-label", img.alt || "Image");
+  const big = document.createElement("img");
+  big.src = img.src;
+  big.alt = img.alt || "";
+  const cap = img.closest("figure") && img.closest("figure").querySelector("figcaption");
+  const close = document.createElement("button");
+  close.className = "lb-close";
+  close.setAttribute("aria-label", "Close");
+  close.textContent = "\u00d7";
+  box.appendChild(close);
+  box.appendChild(big);
+  if (cap) { const p = document.createElement("p"); p.textContent = cap.textContent; box.appendChild(p); }
+  function shut() { box.remove(); document.removeEventListener("keydown", onKey); }
+  function onKey(e) { if (e.key === "Escape") shut(); }
+  box.addEventListener("click", shut);
+  document.addEventListener("keydown", onKey);
+  document.body.appendChild(box);
+  close.focus();
 }
