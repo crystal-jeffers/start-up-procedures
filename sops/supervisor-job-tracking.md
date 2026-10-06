@@ -2,9 +2,8 @@
 
 Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. The tracker shows where each job is; the checklist is where the work gets ticked off.
 
-**Where:** Airtable → **Service Workspace** → **Job Tracker** and **Job Checklists**.
 
-## The three pages, and what each is for
+## What each page is for:
 
 <div class="table-scroll">
 <table>
@@ -19,16 +18,15 @@ Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-
 
 ## Job status
 
-- **Planned:** booked but not started. No checklist yet.
-- **Active:** work underway. Setting a job to Active creates its checklist automatically.
-- **On Hold**, **Complete:** self-explanatory.
-- **Historical:** jobs carried over from the old spreadsheet. They keep their dispatch history but never get a checklist.
+- **Planned:** booked but not started. (no checklist)
+- **Active:** work underway. (checklist generates automatically)
+- **Archived:** job checklist is complete, details are archived for historical context.
 
 <!-- CAPTURE: Job Tracker, Active tab, showing Current Phase and Progress columns. Save as assets/img/supervisor/job-tracker.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/job-tracker.png" alt="Job Tracker Active tab with current phase and progress for each job" loading="lazy">
-  <figcaption>Current Phase is the earliest phase that still has open items.</figcaption>
 </figure>
+
 
 ## Starting a job
 
@@ -38,19 +36,18 @@ Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-
 <li>Open <strong>Job Tracker</strong> → <strong>Planned</strong> tab and open the job.</li>
 <li>Fill in <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>.</li>
 <li>Tick <strong>Commissioning In Scope</strong> if Cx applies. Confirm with the PM.</li>
-<li>Change <strong>Status</strong> to <strong>Active</strong>.</li>
-<li>Within a minute the job has its full checklist. If Cx is not in scope, the Commissioning items arrive already marked N/A.</li>
+<li>Status changes to <strong>Active</strong>.</li>
+<li>Job checklist auto-generates. If Cx is not in scope, the Commissioning items arrive already marked N/A.</li>
 </ol>
 </div>
 
-<div class="callout"><strong>Set Commissioning In Scope before making the job Active.</strong> The checklist is built once, at that moment.</div>
+
 
 ## Working the checklist
 
 <!-- CAPTURE: Job Checklists with one job selected, Pre-Start group expanded, a few items ticked. Save as assets/img/supervisor/job-checklist.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/job-checklist.png" alt="Job Checklists page grouped by phase with Done and N/A checkboxes" loading="lazy">
-  <figcaption>Pick the job, then work down the phases.</figcaption>
 </figure>
 
 - Pick the job in the **Job** dropdown. Items are grouped by phase, in SOP order.
