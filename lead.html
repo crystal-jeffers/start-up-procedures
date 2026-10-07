@@ -21,6 +21,13 @@
 </main>
 <script src="assets/nav-config.js"></script>
 <script src="assets/render.js"></script>
-<script>renderHub("lead");</script>
+<script>
+    if (typeof SOP_LIBRARY === "undefined" || typeof renderHub === "undefined") {
+    document.getElementById("sop-list").innerHTML =
+      "<p><strong>Couldn't load the SOP list.</strong> assets/nav-config.js or assets/render.js is missing or has an error.</p>";
+  } else {
+    renderHub("lead");
+  }
+</script>
 </body>
 </html>
