@@ -23,10 +23,7 @@ The <strong>checklist</strong> is where the work gets ticked off.
 
 <div class="bubble-columns">
 <div class="bubble-column">
-<h4 class="align-left">PLANNED</h4>
-<div class="bubble">Booked, not started.</div>
-</div>
-<div class="bubble-column">
+<h4 class="align-left">PLANNED: Booked, not started.</h4>
 <h4 class="align-left">ACTIVE</h4>
 <div class="bubble">Work underway. Happens <strong>automatically</strong> once the job has a Job Number, Lead Tech and PM. The checklist is created at the same moment.</div>
 </div>
