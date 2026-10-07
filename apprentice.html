@@ -4,21 +4,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SOPs</title>
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=7">
 </head>
 <body>
 <header class="sticky">
-  <div class="top-row">
-    <h1>Southland SOPs</h1>
-    <span class="role-tag" id="role-tag"></span>
-  </div>
-  <div class="extras-row" id="extras-row"></div>
+<div class="top-row">
+<h1>Southland SOPs</h1>
+<button id="jump-nav-toggle">Sections ▾</button>
+</div>
+<span class="role-tag" id="role-tag"></span>
+<div id="jump-nav-menu"></div>
+<div class="extras-row" id="extras-row"></div>
 </header>
 <main>
-  <div id="sop-list"></div>
+<div id="sop-list"></div>
 </main>
-<script src="assets/nav-config.js"></script>
-<script src="assets/render.js"></script>
-<script>renderHub("apprentice");</script>
+<script src="assets/nav-config.js?v=7"></script>
+<script src="assets/render.js?v=7"></script>
+<script>
+  if (typeof SOP_LIBRARY === "undefined" || typeof renderHub === "undefined") {
+    document.getElementById("sop-list").innerHTML =
+      "<p><strong>Couldn't load the SOP list.</strong> assets/nav-config.js or assets/render.js is missing or has an error.</p>";
+  } else {
+    renderHub("apprentice");
+  }
+</script>
 </body>
 </html>
