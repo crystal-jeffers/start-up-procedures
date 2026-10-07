@@ -1,6 +1,6 @@
 # Job Tracker & Checklists
 
-Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. The tracker shows where each job is; the checklist is where the work gets ticked off.
+Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. The <strong>tracker</strong> shows where each job is. The <strong>checklist</strong> is where the work gets ticked off.
 
 
 ## What each page is for:
@@ -10,8 +10,8 @@ Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-
 <thead><tr><th>Page</th><th>What it's for</th><th>How often</th></tr></thead>
 <tbody>
 <tr><td>Job Tracker</td><td>One row per job: current phase, progress, lead, PM</td><td>Daily glance</td></tr>
-<tr><td>Job Checklists</td><td>Tick each checkpoint Done or N/A</td><td>As work happens</td></tr>
-<tr><td>SOP Checklist (Templates)</td><td>The master list every new job copies</td><td>Only when the SOP changes</td></tr>
+<tr><td>Job Checklists</td><td>Tick each checkbox Done or N/A</td><td>As work happens</td></tr>
+<tr><td>SOP Checklist (Templates)</td><td>Mster list every job copies</td><td>Only when the SOP changes</td></tr>
 </tbody>
 </table>
 </div>
@@ -48,25 +48,28 @@ Every start-up job carries the full SOP checklist: Admin Info, Pre-Start, Start-
 <div class="numbered-group">
 <h4>Set up a new job</h4>
 <ol>
-<li>On <strong>Job Tracker</strong> → <strong>Planned</strong>, open the job.</li>
+<li><strong>Job Tracker</strong> → <strong>Planned</strong>, open job</li>
 <li>Add the <strong>Deadline</strong> if there is one.</li>
-<li>Tick <strong>Commissioning In Scope</strong> if Cx applies (you can change this any time).</li>
-<li>Fill in <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>. As soon as all three are in, the job turns Active and its checklist appears.</li>
+<li>Tick <strong>Commissioning In Scope</strong> if Cx applies (you can change this later).</li>
+<li>Add <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>. Once all three are in, the job turns Active and its checklist appears.</li>
 </ol>
 </div>
 
+
 <div class="callout"><strong>Commissioning can change mid-job.</strong> Unticked, the commissioning steps show as <em>Not in scope</em> and count as closed. Tick the box later and they reopen right away.</div>
+
+
 
 ## Schedule status
 
-Every job with a deadline gets a status, and the Job Tracker and Service Dashboard sort by it.
+Every job with a deadline gets a status. Job Tracker and Service Dashboard sort by it.
 
 <div class="table-scroll">
 <table>
 <thead><tr><th>Status</th><th>Means</th></tr></thead>
 <tbody>
 <tr><td>🔴 Overdue</td><td>Past the deadline and not finished</td></tr>
-<tr><td>🟠 Behind</td><td>Under the expected pace for the time used</td></tr>
+<tr><td>🟠 Behind</td><td>Under the expected pace for time used</td></tr>
 <tr><td>🟡 Due soon</td><td>14 days or fewer left</td></tr>
 <tr><td>🟢 On track</td><td>Keeping pace</td></tr>
 <tr><td>⚪ No deadline</td><td>Add one to track pace</td></tr>
@@ -74,7 +77,7 @@ Every job with a deadline gets a status, and the Job Tracker and Service Dashboa
 </table>
 </div>
 
-Pace is measured from the job's first day on the dispatch board. If start-up work actually began later, fill in <strong>Job Start</strong> and the status recalculates.
+Pace is measured from the job's first day on the dispatch board. If work began later, fill in <strong>Job Start</strong> and the status recalculates.
 
 
 ## Working the checklist
@@ -89,6 +92,7 @@ Pace is measured from the job's first day on the dispatch board. If start-up wor
 - Tick **N/A** when a step doesn't apply to this job. It counts as closed.
 - Use **Notes** for anything the next person needs: who confirmed, what's outstanding.
 - **Recurring** steps (weekly workforce review, 24/48/72-hour checks): tick once the routine is set up or the last check is done.
+
 
 ## Reading progress
 
