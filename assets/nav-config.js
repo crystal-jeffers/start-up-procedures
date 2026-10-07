@@ -35,21 +35,14 @@ const SOP_LIBRARY = [
     roles: ["supervisor"],
     featured: ["supervisor"]
   },
-  {
-    id: "view-only-schedule",
-    title: "Reading the Crew Schedule",
-    file: "sops/view-only-schedule.md",
-    roles: ["apprentice", "tech", "lead", "supervisor"],
-    featured: ["apprentice"]
-  },
 
   /* ---------- Start-up procedures ---------- */
   {
     id: "start-up-lifecycle",
     title: "Start-Up Lifecycle",
     file: "sops/start-up-lifecycle.md",
-    roles: ["tech", "lead", "supervisor"],
-    featured: ["tech", "lead"]
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: ["apprentice", "tech", "lead"]
   },
   {
     id: "admin-info",
@@ -69,14 +62,14 @@ const SOP_LIBRARY = [
     id: "pre-start",
     title: "Pre-Start",
     file: "sops/pre-start.md",
-    roles: ["tech", "lead", "supervisor"],
+    roles: ["apprentice", "tech", "lead", "supervisor"],
     featured: ["tech", "lead"]
   },
   {
     id: "start-up",
     title: "Start-Up",
     file: "sops/start-up.md",
-    roles: ["tech", "lead", "supervisor"],
+    roles: ["apprentice", "tech", "lead", "supervisor"],
     featured: ["tech", "lead"]
   },
   {
@@ -90,14 +83,14 @@ const SOP_LIBRARY = [
     id: "best-practices",
     title: "Best Practices",
     file: "sops/best-practices.md",
-    roles: ["tech", "lead", "supervisor"],
-    featured: []
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: ["apprentice"]
   },
   {
     id: "contacts",
     title: "Contacts",
     file: "sops/contacts.md",
-    roles: ["tech", "lead", "supervisor"],
+    roles: ["apprentice", "tech", "lead", "supervisor"],
     featured: []
   }
 ];
@@ -126,5 +119,5 @@ const ROLE_EXTRAS = {
 // Role switcher: roles listed here show buttons for these other role views
 // in place of the "All other SOPs" list.
 const ROLE_SWITCHER = {
-  supervisor: ["apprentice", "tech", "lead", "pm"]
+  supervisor: ["apprentice", "tech", "lead"]
 };
