@@ -20,7 +20,7 @@ Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commi
 
 <div class="bubble-columns">
 <div class="bubble-column">
-<h4>Planned</h4>
+<h4 class="align-left">Planned</h4>
 <div class="bubble">Booked, not started.</div>
 </div>
 <div class="bubble-column">
