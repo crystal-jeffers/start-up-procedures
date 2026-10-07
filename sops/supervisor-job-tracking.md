@@ -13,8 +13,8 @@ The <strong>checklist</strong> is where the work gets ticked off.
 <thead><tr><th>Page</th><th>What it's for</th><th>How often</th></tr></thead>
 <tbody>
 <tr><td>Job Tracker</td><td>One row per job: current phase, progress, lead, PM</td><td>Daily glance</td></tr>
-<tr><td>Job Checklists</td><td>Tick each checkbox Done or N/A</td><td>As work happens</td></tr>
-<tr><td>SOP Checklist (Templates)</td><td>Mster list every job copies</td><td>Only when the SOP changes</td></tr>
+<tr><td>Job Checklists</td><td>Tick each checkpoint Done or N/A</td><td>As work happens</td></tr>
+<tr><td>SOP Checklist</td><td>Master list every job copies</td><td>Only when the SOP changes</td></tr>
 </tbody>
 </table>
 </div>
@@ -23,19 +23,19 @@ The <strong>checklist</strong> is where the work gets ticked off.
 
 <div class="bubble-columns">
 <div class="bubble-column">
-<h4 class="align-left">Planned</h4>
+<h4 class="align-left">PLANNED</h4>
 <div class="bubble">Booked, not started.</div>
 </div>
 <div class="bubble-column">
-<h4 class="align-left">Active</h4>
+<h4 class="align-left">ACTIVE</h4>
 <div class="bubble">Work underway. Happens <strong>automatically</strong> once the job has a Job Number, Lead Tech and PM. The checklist is created at the same moment.</div>
 </div>
 <div class="bubble-column">
-<h4 class="align-left">On Hold</h4>
+<h4 class="align-left">ON HOLD</h4>
 <div class="bubble">Paused. Set by hand. Set it back to Active to resume.</div>
 </div>
 <div class="bubble-column">
-<h4 class="align-left">Archived</h4>
+<h4 class="align-left">ARCHIVED</h4>
 <div class="bubble">Finished. Happens <strong>automatically</strong> when every checkpoint is closed (100%).</div>
 </div>
 </div>
