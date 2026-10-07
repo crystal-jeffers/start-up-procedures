@@ -1,13 +1,12 @@
 # Editing the SOP Checklist
 
-The **SOP Checklist (Templates)** page holds the master list: 88 checkpoints across five phases, built from the Start-Up SOPs. Every job copies this list at the moment it becomes Active.
+The **SOP Checklist** page holds the master list: 88 checkpoints across five phases, built from the Start-Up SOPs. Every job copies this list at the moment it becomes Active.
 
-**Where:** Airtable → **Service Workspace** → **SOP Checklist (Templates)**.
+**Service Workspace** → **SOP Checklist**
 
 <!-- CAPTURE: SOP Checklist (Templates) grouped by phase, Admin Info expanded. Save as assets/img/supervisor/sop-templates.png -->
 <figure class="shot">
-  <img src="assets/img/supervisor/sop-templates.png" alt="SOP checklist templates grouped by phase with source section and flags" loading="lazy">
-  <figcaption>The master list. Edit here, not on individual jobs.</figcaption>
+  <img src="assets/img/supervisor/sop-checklist.png" alt="SOP checklist templates grouped by phase with source section and flags" loading="lazy">
 </figure>
 
 ## What each column means
@@ -26,14 +25,14 @@ The **SOP Checklist (Templates)** page holds the master list: 88 checkpoints acr
 </table>
 </div>
 
+
 ## Making changes
 
-- **Reword or reorder a step:** edit it here. New jobs get the change.
+- **Reword or reorder:** edit SOP checklist. New jobs get the change.
 - **Add a step:** add a row, pick its Phase, give it a Step number.
-- **Retire a step:** untick **Active**. Don't delete it; old jobs still point to it.
+- **Retire a step:** untick **Active**. Don't delete it, old jobs still point to it.
 
-<div class="callout"><strong>Changes don't reach jobs that are already Active.</strong> Their checklists were copied when they started. If a change matters for a live job, add or edit that item on the job's own checklist.</div>
 
-## When the SOP pages change
+<div class="callout"><strong>Changes don't reach Active jobs.</strong> 
+  Checklists are copied when jobs start. If a change matters for a live job, edit directly on that job's checklist.</div>
 
-The written SOPs on this site and this checklist should match. When you update one, update the other in the same sitting.
