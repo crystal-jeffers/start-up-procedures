@@ -2,8 +2,8 @@
 
 Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. 
 
-The <strong>tracker</strong> shows where each job is. 
-The <strong>checklist</strong> is where the work gets ticked off.
+The <strong>tracker</strong> shows overall job status. 
+The <strong>checklist</strong> is where phase tasks are logged.
 
 
 ## What each page is for:
@@ -14,7 +14,7 @@ The <strong>checklist</strong> is where the work gets ticked off.
 <tbody>
 <tr><td>Job Tracker</td><td>One row per job: current phase, progress, lead, PM</td><td>Daily glance</td></tr>
 <tr><td>Job Checklists</td><td>Tick each checkpoint Done or N/A</td><td>As work happens</td></tr>
-<tr><td>SOP Checklist</td><td>Master list every job copies</td><td>Only when the SOP changes</td></tr>
+<tr><td>SOP Checklist</td><td>Master list every job copies</td><td>When SOP changes</td></tr>
 </tbody>
 </table>
 </div>
@@ -24,13 +24,15 @@ The <strong>checklist</strong> is where the work gets ticked off.
 <div class="bubble-columns">
 <div class="bubble-column">
 <h4 class="align-left">PLANNED: Booked, not started.</h4>
+</div>
+</div>
 <div class="bubble-column">
 <h4 class="align-left">ACTIVE: Work underway.</h4>
-<div class="bubble">Status triggers and checklist is created <strong>automatically</strong> once the job has a Job Number, Lead Tech and PM.</div>
+<div class="bubble">Status changes and checklist is created <strong>automatically</strong> once jobs have Job Number, Lead Tech and PM.</div>
 </div>
 <div class="bubble-column">
 <h4 class="align-left">ON HOLD: Paused.</h4>
-<div class="bubble">Set by hand. Set it back to Active to resume.</div>
+<div class="bubble">Set by hand. Set to Active to resume.</div>
 </div>
 <div class="bubble-column">
 <h4 class="align-left">ARCHIVED: Finished.</h4>
@@ -53,7 +55,7 @@ The <strong>checklist</strong> is where the work gets ticked off.
 <li><strong>Job Tracker</strong> → <strong>Planned</strong>, open job.</li>
 <li>Add the <strong>Deadline</strong> if there is one.</li>
 <li>Tick <strong>Commissioning In Scope</strong> if Cx applies (you can change this later).</li>
-<li>Add <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>. Once all three are in, the job turns Active and its checklist appears.</li>
+<li>Add <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>. (Once all three are in, job turns Active and checklist appears.)</li>
 </ol>
 </div>
 
@@ -63,7 +65,6 @@ The <strong>checklist</strong> is where the work gets ticked off.
 
 
 ## Schedule status
-
 Every job with a deadline gets a status. Job Tracker and Service Dashboard sort by it.
 
 <div class="table-scroll">
@@ -98,6 +99,5 @@ Pace is measured from the job's first day on the dispatch board. If work began l
 
 
 ## Reading progress
-
 - **Progress** is the share of checkpoints that are Done, N/A, or Not in scope.
 - **Current Phase** moves forward on its own as each phase closes out. When every item is closed, the job reaches 100% and is archived automatically.
