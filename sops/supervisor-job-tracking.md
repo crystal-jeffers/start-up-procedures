@@ -1,6 +1,9 @@
 # Job Tracker & Checklists
 
-Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. The <strong>tracker</strong> shows where each job is. The <strong>checklist</strong> is where the work gets ticked off.
+Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commissioning and Closeout. 
+
+The <strong>tracker</strong> shows where each job is. 
+The <strong>checklist</strong> is where the work gets ticked off.
 
 
 ## What each page is for:
