@@ -40,6 +40,7 @@ Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commi
 <!-- CAPTURE: Job Tracker, Active tab, showing Current Phase and Progress columns. Save as assets/img/supervisor/job-tracker.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/job-tracker.png" alt="Job Tracker Active tab with current phase and progress for each job" loading="lazy">
+<figcaption>Most pressing deadline at the top. Tap to enlarge.</figcaption>
 </figure>
 
 
@@ -48,7 +49,7 @@ Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commi
 <div class="numbered-group">
 <h4>Set up a new job</h4>
 <ol>
-<li><strong>Job Tracker</strong> → <strong>Planned</strong>, open job</li>
+<li><strong>Job Tracker</strong> → <strong>Planned</strong>, open job.</li>
 <li>Add the <strong>Deadline</strong> if there is one.</li>
 <li>Tick <strong>Commissioning In Scope</strong> if Cx applies (you can change this later).</li>
 <li>Add <strong>Job Number</strong>, <strong>Lead Tech</strong> and <strong>PM</strong>. Once all three are in, the job turns Active and its checklist appears.</li>
@@ -92,9 +93,10 @@ Pace is measured from the job's first day on the dispatch board. If work began l
 - Tick **N/A** when a step doesn't apply to this job. It counts as closed.
 - Use **Notes** for anything the next person needs: who confirmed, what's outstanding.
 - **Recurring** steps (weekly workforce review, 24/48/72-hour checks): tick once the routine is set up or the last check is done.
+- **Checkpoint Status** reads Done, N/A, Not in scope, or Open.
 
 
 ## Reading progress
 
-- **Progress** is the share of checkpoints that are Done or N/A.
-- **Current Phase** moves forward on its own as each phase closes out. When every item is closed it reads **Complete**.
+- **Progress** is the share of checkpoints that are Done, N/A, or Not in scope.
+- **Current Phase** moves forward on its own as each phase closes out. When every item is closed, the job reaches 100% and is archived automatically.
