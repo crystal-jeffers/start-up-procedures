@@ -24,15 +24,15 @@ Every job carries the full SOP checklist: Admin Info, Pre-Start, Start-Up, Commi
 <div class="bubble">Booked, not started.</div>
 </div>
 <div class="bubble-column">
-<h4>Active</h4>
+<h4 class="align-left">Active</h4>
 <div class="bubble">Work underway. Happens <strong>automatically</strong> once the job has a Job Number, Lead Tech and PM. The checklist is created at the same moment.</div>
 </div>
 <div class="bubble-column">
-<h4>On Hold</h4>
+<h4 class="align-left">On Hold</h4>
 <div class="bubble">Paused. Set by hand. Set it back to Active to resume.</div>
 </div>
 <div class="bubble-column">
-<h4>Archived</h4>
+<h4 class="align-left">Archived</h4>
 <div class="bubble">Finished. Happens <strong>automatically</strong> when every checkpoint is closed (100%).</div>
 </div>
 </div>
