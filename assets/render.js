@@ -63,6 +63,10 @@ function renderHub(role) {
   // buttons for the other role views instead of "All other SOPs".
   const switchTo = (typeof ROLE_SWITCHER !== "undefined" && ROLE_SWITCHER[role]) || null;
   if (switchTo && switchTo.length) {
+    // Extra space above the role buttons. Change 1.5rem to adjust.
+    const gap = document.createElement("div");
+    gap.style.height = "1.5rem";
+    container.appendChild(gap);
     const label3 = document.createElement("div");
     label3.className = "section-label";
     label3.textContent = "See what each role sees";
@@ -177,6 +181,9 @@ function injectEnhanceStyles() {
     #sop-content .table-scroll table { min-width: 560px; }
     #sop-content th, #sop-content td { overflow-wrap: normal; word-break: normal; hyphens: none; }
     #sop-content img { cursor: zoom-in; }
+    #sop-content .align-left { text-align: left !important; }
+    #sop-content .align-center { text-align: center !important; }
+    #sop-content .align-right { text-align: right !important; }
     .lightbox { position: fixed; inset: 0; z-index: 1000; background: rgba(0,0,0,0.88);
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       padding: env(safe-area-inset-top, 0px) 0.75rem env(safe-area-inset-bottom, 0px); cursor: zoom-out; }
