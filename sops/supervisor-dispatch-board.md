@@ -96,16 +96,24 @@ Use the **Technician** and **Job** dropdowns at the top of either page. (Clear t
 ## Absences and privacy
 
 - Book absences as **Type = Out** and leave notes as needed. Shared pages only shows as *Out*, in gray.
+- **Supervisor Notes** are only visible to you. They will not appear on the technician's personal view. 
 - **Notes** (without "Supervisor") are visible to everyone. Use them for job details like *"Steam blowdown Sunday."*
 - **Holidays** live in their own list with the union locals that observe them. They don't appear on the board yet, so book holiday days as *Out* for the techs who take them.
 
+<figure class="shot">
+  <img src="assets/img/supervisor/supervisor-notes.png">
+</figure>
 
 ## Adding a new technician
 
 <ol class="chunked-list">
-<li>Add them to the <strong>Technicians</strong> list (name, union local).</li>
+<li>Everything happens on the <strong>Crew</strong> page.</li>
+
+<li>Enter their <strong>Name</strong>, <strong>Email</strong>, and <strong>Union Local</strong> and tick <strong>Active</strong>.
 <li>Add their name as a new option in <strong>Calendar Color</strong> and pick a color. Without this step their bars stay uncolored.</li>
 <li>Book their first assignment as usual.</li>
+
+<li><strong>Someone leaving?</strong> Untick <strong>Active</strong> on the Crew page. They drop off the schedule email and the active list, but history stays intact.</li>
 </ol>
 
 
