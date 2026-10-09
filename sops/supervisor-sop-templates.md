@@ -1,6 +1,6 @@
 # Editing the SOP Checklist
 
-The **SOP Checklist** page holds the master list: 88 checkpoints across five phases, built from the Start-Up SOPs. Every job copies this list at the moment it becomes Active.
+The **SOP Checklist** page holds the master list: 88 checkpoints across five phases, built from the Start-Up SOPs. Every job copies this list once it becomes Active.
 
 **Service Workspace** → **SOP Checklist**
 
