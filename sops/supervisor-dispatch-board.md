@@ -68,7 +68,7 @@ Everyone else views a read-only live feed that only shows their assignments. The
 <div class="numbered-group">
 <h4>Add an assignment</h4>
 <ol>
-<li>Click <strong>+</strong> in the technician's row.</li>
+<li>Click <strong>+</strong> on the date or select the technician's row.</li>
 <li>Pick <strong>Technician</strong>, <strong>Type</strong> and <strong>Job</strong>.</li>
 <li>Set <strong>Start Date</strong> and <strong>End Date</strong>.</li>
 <li>The label and color fill in on their own a few seconds later.</li>
