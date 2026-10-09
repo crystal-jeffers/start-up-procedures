@@ -15,16 +15,35 @@ This is general information that will not cover all scenarios. Please contact Te
 </div>
 </div>
 
-<li>The lead tech walks the entire project, confirms systems with markup prints, and highlights time-sensitive issues with the PX, PM, or QA-QC.</li>
-<li>Technicians work with wet/dry/electrical/controls/GC to verify equipment is ready for startup.</li>
-<li>Start-Up team visually verifies overall system readiness.</li>
-<li>Trades signoff is completed (verify valves, dampers, utilities, etc.).</li>
-<li>Technicians perform final startup.</li>
-<li>Technicians support vendor startup and provide documentation to the PM team.</li>
-<li>Technicians complete any documentation required for "turnover" of systems to the air/water balance and controls contractors.</li>
-<li>Technicians aid in the commissioning effort as directed by the PM team.</li>
-<li>Technicians complete all punch list items.</li>
-<li>Technicians perform customer training.</li>
-<li>Technicians assist the Superintendent/PM team in setting up warranty protocol.</li>
-<li>Technicians collaborate with the Start-Up Superintendent and Service Department to provide a PM contract (if applicable).</li>
+<div class="callout">
+<div class="bubble-column">
+<div class="bubble">The lead tech walks the entire project, confirms systems with markup prints, and highlights time-sensitive issues with the PX, PM, or QA-QC.</div>
+<div class="bubble">Technicians work with wet/dry/electrical/controls/GC to verify equipment is ready for startup.</div>
+<div class="bubble">Start-Up team visually verifies overall system readiness.</div>
+</div>
+</div>
+  
+<div class="callout">
+<div class="bubble-column">
+<div class="bubble">Trades signoff is completed (verify valves, dampers, utilities, etc.).</div>
+<div class="bubble">Technicians perform final startup.</div>
+<div class="bubble">Technicians support vendor startup and provide documentation to the PM team.</div>
+</div>
+</div>
+  
+<div class="callout">
+<div class="bubble-column">
+<div class="bubble">Technicians complete any documentation required for "turnover" of systems to the air/water balance and controls contractors.</div>
+<div class="bubble">Technicians aid in the commissioning effort as directed by the PM team.</div>
+<div class="bubble">Technicians complete all punch list items.</div>
+</div>
+</div>
+  
+<div class="callout">
+<div class="bubble-column">
+<div class="bubble">Technicians perform customer training.</div>
+<div class="bubble">Technicians assist the Superintendent/PM team in setting up warranty protocol.</div>
+<div class="bubble">Technicians collaborate with the Start-Up Superintendent and Service Department to provide a PM contract (if applicable).</div>
+</div>
+</div>
 
