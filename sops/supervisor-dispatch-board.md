@@ -16,11 +16,11 @@ Everyone else views a read-only live feed that only shows their assignments. The
 <div class="carousel">
 <figure class="shot">
   <img src="assets/img/supervisor/timeline-overview.png" alt="Dispatch Timeline showing one row per technician across two weeks" loading="lazy">
-  <figcaption>Timeline: who is where this week.</figcaption>
+  <figcaption>Timeline view.</figcaption>
 </figure>
 <figure class="shot">
   <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
-  <figcaption>Filter by Technician or Job. Clear the filter to see everyone again.</figcaption>
+  <figcaption>Filter by Technician or Job. (Clear the filter to see everyone again.)</figcaption>
 </figure>
 <figure class="shot">
   <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
@@ -31,7 +31,6 @@ Everyone else views a read-only live feed that only shows their assignments. The
   <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
 </figure>
 </div>
-
 
 - **Rows**: One row per technician.
 - **Bars**: Each bar is one assignment.
