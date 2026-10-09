@@ -45,7 +45,7 @@ Everyone else views a read-only live feed that only shows their assignments. The
 
 <div class="table-scroll">
 <table>
-<thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
+<thead><tr><th>Type</th><th>Use it for</th></tr></thead>
 <tbody>
 <tr><td>Job</td><td>Start-up work on a site</td></tr>
 <tr><td>Training</td><td>Classes, manufacturer training, owner training days</td></tr>
@@ -98,7 +98,7 @@ Everyone else views a read-only live feed that only shows their assignments. The
 <details class="accordion"> <summary>Absences and privacy</summary> <div class="accordion-body">
 
 - Book absences as **Type = Out** and leave notes as needed.
-- **Supervisor Notes** are only visible to you. They never appear on the technician's personal view.
+- **Supervisor Notes** are only visible to you.
 - **Notes** (without "Supervisor") are visible to everyone for job details like *"Steam blowdown Sunday."*
 - **Holidays** live in their own list. 
 
