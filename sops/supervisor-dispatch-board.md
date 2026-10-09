@@ -26,19 +26,28 @@ Everyone else views a read-only live feed that only shows their assignments. The
   <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
   <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
 </figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-no-holiday.png" alt="Scheduling an appointment with no holiday conflicts." loading="lazy">
+  <figcaption>Scheduling an appointment with no holiday conflicts.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-holiday.png" alt="A warning message with holiday details will appear if scheduling conflicts exist." loading="lazy">
+  <figcaption>A warning message with holiday details will appear if scheduling conflicts exist.</figcaption>
 </figure>
 </div>
 
 - **Rows**: One row per technician.
 - **Bars**: Each bar is one assignment.
-- **Colors:** Each technician is colored by union. **Out** shows in gray.
+- **Colors:** Each technician is colored by union.
+- -- **Out** shows in gray.
+- -- **Holiday** shows in teal.
 - **Weekends** are hidden by default. Switch views to see weekends.
 
 ## Automated Friday Email 
 <figure class="shot">
   <img src="assets/img/supervisor/my-schedule-email.png" alt="Example Friday schedule email listing one technician's assignments for next week" loading="lazy">
   <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
-
+</figure>
 
 </div> </details>
 
