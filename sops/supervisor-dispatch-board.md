@@ -8,17 +8,34 @@ Each assignment is one record with a technician, job, type and date range.
 
 Everyone else views a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
 
-<figure class="shot">
-  <img src="assets/img/supervisor/my-schedule-email.png">
+<figure class="shot compact">
+  <img src="assets/img/supervisor/my-schedule-email.png" alt="Example Friday schedule email listing one technician's assignments for next week" loading="lazy">
+  <figcaption>Friday email. Tap to enlarge.</figcaption>
 </figure>
+
 
 
 ## Reading the board
 
-<!-- CAPTURE: Dispatch Timeline, two-week view, all technicians, no filters. Crop to the board. Save as assets/img/supervisor/timeline-overview.png -->
+<div class="clear"></div>
+
+<details class="accordion"> <summary>Reading the board</summary> <div class="accordion-body">
+
+<div class="carousel">
 <figure class="shot">
-  <img src="assets/img/supervisor/timeline-overview.png" alt="Dispatch Timeline showing one row per technician across two weeks, bars colored by technician" loading="lazy">
+  <img src="assets/img/supervisor/timeline-overview.png" alt="Dispatch Timeline showing one row per technician across two weeks" loading="lazy">
+  <figcaption>Timeline: who is where this week.</figcaption>
 </figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
+  <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
+  <figcaption>Filter by Technician or Job. Clear the filter to see everyone again.</figcaption>
+</figure>
+</div>
+
 
 - **Rows**: One row per technician.
 - **Bars**: Each bar is one assignment.
@@ -52,6 +69,25 @@ Use the **Technician** and **Job** dropdowns.
 </tbody>
 </table>
 </div>
+
+
+</div> </details>
+
+<details class="accordion"> <summary>Assignment types</summary> <div class="accordion-body">
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
+<tbody>
+<tr><td>Job</td><td>Start-up work on a site</td><td>Required</td></tr>
+<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td><td>Training record</td></tr>
+<tr><td>Internal</td><td>Shop, office, service assistance</td><td>Internal record</td></tr>
+<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td><td>Leave blank</td></tr>
+<tr><td>Unassigned</td><td>Available, nothing booked yet</td><td>Leave blank</td></tr>
+</tbody>
+</table>
+</div>
+
 
 
 
