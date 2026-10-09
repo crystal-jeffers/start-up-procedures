@@ -8,11 +8,6 @@ Each assignment is one record with a technician, job, type and date range.
 
 Everyone else views a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
 
-<figure class="shot compact">
-  <img src="assets/img/supervisor/my-schedule-email.png" alt="Example Friday schedule email listing one technician's assignments for next week" loading="lazy">
-  <figcaption>Friday email. Tap to enlarge.</figcaption>
-</figure>
-
 
 
 <div class="clear"></div>
@@ -32,6 +27,10 @@ Everyone else views a read-only live feed that only shows their assignments. The
   <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
   <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
 </figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/my-schedule-email.png" alt="Example Friday schedule email listing one technician's assignments for next week" loading="lazy">
+  <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
+</figure>
 </div>
 
 
@@ -40,8 +39,6 @@ Everyone else views a read-only live feed that only shows their assignments. The
 - **Colors:** Each technician is colored by union. **Out** shows in gray.
 - **Weekends** are hidden by default. Switch views to see weekends.
 
-**Timeline**: "who's where this week?"
-**Calendar**: "what's happening on this job this month?"
 
 
 </div> </details>
