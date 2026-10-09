@@ -49,11 +49,11 @@ Everyone else views a read-only live feed that only shows their assignments. The
 <table>
 <thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
 <tbody>
-<tr><td>Job</td><td>Start-up work on a site</td><td>Required</td></tr>
-<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td><td>Training record</td></tr>
-<tr><td>Internal</td><td>Shop, office, service assistance</td><td>Internal record</td></tr>
-<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td><td>Leave blank</td></tr>
-<tr><td>Unassigned</td><td>Available, nothing booked yet</td><td>Leave blank</td></tr>
+<tr><td>Job</td><td>Start-up work on a site</td></tr>
+<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td></tr>
+<tr><td>Internal</td><td>Shop, office, service assistance</td></tr>
+<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td></tr>
+<tr><td>Unassigned</td><td>Available, nothing booked yet</td></tr>
 </tbody>
 </table>
 </div>
