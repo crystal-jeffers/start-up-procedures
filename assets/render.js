@@ -152,7 +152,8 @@ async function renderSopPage() {
     contentDiv.appendChild(link);
   }
 
-  const headings = contentDiv.querySelectorAll("h2, h3");
+  // Jump menu lists headings AND collapsible sections (accordion titles).
+  const headings = contentDiv.querySelectorAll("h2, h3, details.accordion > summary");
   const menu = document.getElementById("jump-nav-menu");
   const toggle = document.getElementById("jump-nav-toggle");
 
@@ -165,7 +166,11 @@ async function renderSopPage() {
       const a = document.createElement("a");
       a.href = "#" + id;
       a.textContent = (h.tagName === "H3" ? "\u2003" : "") + h.textContent;
-      a.addEventListener("click", () => menu.classList.remove("open"));
+      a.addEventListener("click", () => {
+        menu.classList.remove("open");
+        const d = h.closest("details");
+        if (d) d.open = true;
+      });
       menu.appendChild(a);
     });
     toggle.addEventListener("click", () => menu.classList.toggle("open"));
@@ -210,6 +215,9 @@ function enhanceContent(root) {
     wrap.appendChild(t);
   });
 
+  // Photo carousels: <div class="carousel"> holding <figure> blocks.
+  root.querySelectorAll(".carousel").forEach(buildCarousel);
+
   // Tap or click any image to see it full screen; tap again (or Esc) to close.
   root.querySelectorAll("img").forEach(img => {
     img.addEventListener("click", () => openLightbox(img));
@@ -238,4 +246,63 @@ function openLightbox(img) {
   document.addEventListener("keydown", onKey);
   document.body.appendChild(box);
   close.focus();
+}
+
+/* ---------- Photo carousel ----------
+   In a .md file, wrap screenshots like this:
+     <div class="carousel">
+       <figure class="shot"><img src="..." alt="..."><figcaption>...</figcaption></figure>
+       <figure class="shot">...</figure>
+     </div>
+   Phones swipe; desktop uses the arrows or dots. Tap any slide to enlarge. */
+function buildCarousel(box) {
+  if (box.dataset.built) return;
+  box.dataset.built = "1";
+  const slides = Array.from(box.querySelectorAll(":scope > figure, :scope > p > figure"));
+  if (slides.length < 2) return;
+  const track = document.createElement("div");
+  track.className = "carousel-track";
+  slides.forEach(f => track.appendChild(f));
+  box.innerHTML = "";
+  box.appendChild(track);
+
+  const controls = document.createElement("div");
+  controls.className = "carousel-controls";
+  const prev = document.createElement("button");
+  prev.className = "carousel-btn"; prev.textContent = "\u2039"; prev.setAttribute("aria-label", "Previous photo");
+  const next = document.createElement("button");
+  next.className = "carousel-btn"; next.textContent = "\u203A"; next.setAttribute("aria-label", "Next photo");
+  const dots = document.createElement("div");
+  dots.className = "carousel-dots";
+  slides.forEach((_, i) => {
+    const d = document.createElement("button");
+    d.className = "carousel-dot";
+    d.setAttribute("aria-label", "Photo " + (i + 1) + " of " + slides.length);
+    d.addEventListener("click", () => go(i));
+    dots.appendChild(d);
+  });
+  controls.append(prev, dots, next);
+  box.appendChild(controls);
+
+  function step() { return slides.length > 1 ? (slides[1].offsetLeft - slides[0].offsetLeft) : (track.clientWidth || 1); }
+  function current() { return Math.round(track.scrollLeft / (step() || 1)); }
+  function go(i) {
+    i = Math.max(0, Math.min(slides.length - 1, i));
+    track.scrollTo({ left: i * step(), behavior: "smooth" });
+  }
+  function update() {
+    const i = current();
+    dots.querySelectorAll(".carousel-dot").forEach((d, n) => d.classList.toggle("active", n === i));
+    prev.disabled = i === 0;
+    next.disabled = i === slides.length - 1;
+  }
+  prev.addEventListener("click", () => go(current() - 1));
+  next.addEventListener("click", () => go(current() + 1));
+  track.addEventListener("scroll", () => window.requestAnimationFrame(update));
+  box.tabIndex = 0;
+  box.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") go(current() - 1);
+    if (e.key === "ArrowRight") go(current() + 1);
+  });
+  update();
 }
