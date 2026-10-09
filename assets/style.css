@@ -586,3 +586,90 @@ main th { background: var(--color-black); color: #fff; font-weight: 600; }
 
 .bubble, .numbered-group, .callout, details.accordion { margin-top: 1rem; margin-bottom: 1rem; }
 .bubble-column .bubble { margin-top: 0; margin-bottom: 0.75rem; }
+
+/* ---------- Update 5 (Oct 9): stacked role buttons, screenshots, carousel ---------- */
+
+/* Supervisor role switcher: always one column (stacked), desktop included */
+.role-switcher { grid-template-columns: 1fr !important; }
+
+/* Screenshots */
+figure.shot { margin: 1rem 0; }
+figure.shot img {
+  display: block;
+  width: 100%;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  background: #fff;
+}
+figure.shot figcaption {
+  font-size: 0.85rem;
+  color: var(--color-grey);
+  margin-top: 0.4rem;
+}
+
+/* Callout box */
+.callout {
+  background: #fff7f0;
+  border-left: 5px solid var(--color-orange);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+
+/* Compact screenshot: small thumbnail beside its text, tap for full size */
+figure.shot.compact {
+  max-width: 190px;
+  margin: 1rem auto;
+  text-align: center;
+}
+figure.shot.compact figcaption::before { content: "\1F50D  "; }
+@media (min-width: 560px) {
+  figure.shot.compact { float: right; margin: 0 0 1rem 1.25rem; max-width: 210px; }
+  .clear { clear: both; }
+}
+
+/* Photo carousel: swipe on phones, arrows or dots on desktop */
+.carousel { position: relative; margin: 1rem 0; }
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  gap: 0.75rem;
+}
+.carousel-track::-webkit-scrollbar { display: none; }
+.carousel-track > figure {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  margin: 0;
+}
+.carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+.carousel-btn {
+  background: var(--color-black);
+  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.carousel-btn:disabled { opacity: 0.3; cursor: default; }
+.carousel-dots { display: flex; gap: 0.4rem; }
+.carousel-dot {
+  width: 10px; height: 10px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0;
+  background: #c4c4c4;
+  cursor: pointer;
+}
+.carousel-dot.active { background: var(--color-orange); }
+@media (prefers-reduced-motion: reduce) { .carousel-track { scroll-behavior: auto; } }
