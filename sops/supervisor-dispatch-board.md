@@ -15,8 +15,6 @@ Everyone else views a read-only live feed that only shows their assignments. The
 
 
 
-## Reading the board
-
 <div class="clear"></div>
 
 <details class="accordion"> <summary>Reading the board</summary> <div class="accordion-body">
@@ -54,6 +52,25 @@ Use the **Technician** and **Job** dropdowns.
 <figure class="shot">
   <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
 </figure>
+
+
+</div> </details>
+
+<details class="accordion"> <summary>Assignment types</summary> <div class="accordion-body">
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
+<tbody>
+<tr><td>Job</td><td>Start-up work on a site</td><td>Required</td></tr>
+<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td><td>Training record</td></tr>
+<tr><td>Internal</td><td>Shop, office, service assistance</td><td>Internal record</td></tr>
+<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td><td>Leave blank</td></tr>
+<tr><td>Unassigned</td><td>Available, nothing booked yet</td><td>Leave blank</td></tr>
+</tbody>
+</table>
+</div>
+
 
 ## Assignment types
 
