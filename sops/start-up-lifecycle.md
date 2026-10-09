@@ -9,9 +9,9 @@ This is general information that will not cover all scenarios. Please contact Te
 
 <div class="callout">
 <div class="bubble-column">
-<div class="bubble"><li>The project management (PM) team submits a request for start-up to the Superintendent.</li></div>
-<div class="bubble"><li>The PM team hosts a kickoff meeting to discuss scope of work and provide access to submittals, vendors, BOD, SOO, schedule, commissioning plan, prints, and site requirements.</li></div>
-<div class="bubble"><li>Start-up techs collaborate with the PM team to create project checklists, forms, and documentation (e.g. CxA forms, pre-functional test scripts, sequence validation scripts, etc).</li></div>
+<div class="bubble">The project management (PM) team submits a request for start-up to the Superintendent.</div>
+<div class="bubble">The PM team hosts a kickoff meeting to discuss scope of work and provide access to submittals, vendors, BOD, SOO, schedule, commissioning plan, prints, and site requirements.</div>
+<div class="bubble">Start-up techs collaborate with the PM team to create project checklists, forms, and documentation (e.g. CxA forms, pre-functional test scripts, sequence validation scripts, etc).</div>
 </div>
 </div>
 
