@@ -7,8 +7,9 @@ This is general information that will not cover all scenarios. Please contact Te
 
 ## Overview of the Process
 
+<div class="callout">
 <ol class="chunked-list">
-<div class="callout"><li>The project management (PM) team submits a request for start-up to the Superintendent.</li>
+<li>The project management (PM) team submits a request for start-up to the Superintendent.</li>
 <li>The PM team hosts a kickoff meeting to discuss scope of work and provide access to submittals, vendors, BOD, SOO, schedule, commissioning plan, prints, and site requirements.</li>
 <li>Start-up techs collaborate with the PM team to create project checklists, forms, and documentation (e.g. CxA forms, pre-functional test scripts, sequence validation scripts, etc).</li></div>
 <li>The lead tech walks the entire project, confirms systems with markup prints, and highlights time-sensitive issues with the PX, PM, or QA-QC.</li>
