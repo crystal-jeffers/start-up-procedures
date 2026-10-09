@@ -9,7 +9,6 @@ Each assignment is one record with a technician, job, type and date range.
 Everyone else views a read-only live feed that only shows their assignments. They will also receive an automated email each Friday afternoon outlining what jobs they have for the upcoming week.</div>
 
 
-
 <div class="clear"></div>
 
 <details class="accordion"> <summary>Reading the board</summary> <div class="accordion-body">
@@ -99,10 +98,10 @@ Everyone else views a read-only live feed that only shows their assignments. The
 
 <details class="accordion"> <summary>Absences and privacy</summary> <div class="accordion-body">
 
-- Book absences as **Type = Out** and leave notes as needed. Shared pages only show *Out*, in gray.
+- Book absences as **Type = Out** and leave notes as needed.
 - **Supervisor Notes** are only visible to you. They never appear on the technician's personal view.
 - **Notes** (without "Supervisor") are visible to everyone for job details like *"Steam blowdown Sunday."*
-- **Holidays** live in their own list. Book holiday days as *Out* for the techs who take them.
+- **Holidays** live in their own list. 
 
 <div class="carousel">
 <figure class="shot">
