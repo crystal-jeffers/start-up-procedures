@@ -12,9 +12,9 @@ The <strong>checklist</strong> is where phase tasks are logged.
 <table>
 <thead><tr><th>Page</th><th>What it's for</th><th>How often</th></tr></thead>
 <tbody>
-<tr><td>Job Tracker</td><td>One row per job: current phase, progress, lead, PM</td><td>Daily glance</td></tr>
+<tr><td>Job Tracker</td><td>One row per job: phase, progress, lead, PM</td><td>Daily glance</td></tr>
 <tr><td>Job Checklists</td><td>Tick each checkpoint Done or N/A</td><td>As work happens</td></tr>
-<tr><td>SOP Checklist</td><td>Master list every job copies</td><td>When SOP changes</td></tr>
+<tr><td>SOP Checklist</td><td>Master list every job copies</td><td>When the SOP changes</td></tr>
 </tbody>
 </table>
 </div>
@@ -23,8 +23,7 @@ The <strong>checklist</strong> is where phase tasks are logged.
 
 <div class="bubble-columns">
 <div class="bubble-column">
-<h4 class="align-left">PLANNED: Booked, not started.</h4>
-</div>
+<h4 class="align-left">BACKLOG: Booked, not started.</h4>
 </div>
 <div class="bubble-column">
 <h4 class="align-left">ACTIVE: Work underway.</h4>
