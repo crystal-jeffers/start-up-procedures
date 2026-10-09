@@ -37,21 +37,11 @@ Everyone else views a read-only live feed that only shows their assignments. The
 
 - **Rows**: One row per technician.
 - **Bars**: Each bar is one assignment.
-- **Colors:** Each technician has their own color. Anyone **Out** shows in gray.
+- **Colors:** Each technician has their own color. **Out** shows in gray.
 - **Weekends** are hidden by default. Switch views to see weekends.
-- **Timeline**: "who is where this week."
-- **Calendar**: "what's happening on this job this month."
 
-
-## Filtering
-
-Use the **Technician** and **Job** dropdowns. 
-(Clear the filter to see everyone again)
-
-<!-- CAPTURE: Dispatch Calendar with the Job dropdown open. Save as assets/img/supervisor/filters.png -->
-<figure class="shot">
-  <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
-</figure>
+**Timeline**: "who's where this week."
+**Calendar**: "what's happening on this job this month."
 
 
 </div> </details>
@@ -71,44 +61,9 @@ Use the **Technician** and **Job** dropdowns.
 </table>
 </div>
 
-
-## Assignment types
-
-<div class="table-scroll">
-<table>
-<thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
-<tbody>
-<tr><td>Job</td><td>Start-up work on a site</td><td>Required</td></tr>
-<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td><td>Training record</td></tr>
-<tr><td>Internal</td><td>Shop, office, service assistance</td><td>Internal record</td></tr>
-<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc</td><td>Leave blank</td></tr>
-<tr><td>Unassigned</td><td>Available, nothing booked yet</td><td>Leave blank</td></tr>
-</tbody>
-</table>
-</div>
-
-
 </div> </details>
 
-<details class="accordion"> <summary>Assignment types</summary> <div class="accordion-body">
-
-<div class="table-scroll">
-<table>
-<thead><tr><th>Type</th><th>Use it for</th><th>Job field</th></tr></thead>
-<tbody>
-<tr><td>Job</td><td>Start-up work on a site</td><td>Required</td></tr>
-<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td><td>Training record</td></tr>
-<tr><td>Internal</td><td>Shop, office, service assistance</td><td>Internal record</td></tr>
-<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td><td>Leave blank</td></tr>
-<tr><td>Unassigned</td><td>Available, nothing booked yet</td><td>Leave blank</td></tr>
-</tbody>
-</table>
-</div>
-
-
-
-
-## Adding, moving and splitting assignments
+<details class="accordion"> <summary>Adding, moving and splitting assignments</summary> <div class="accordion-body">
 
 <div class="numbered-group">
 <h4>Add an assignment</h4>
@@ -123,8 +78,8 @@ Use the **Technician** and **Job** dropdowns.
 <div class="numbered-group">
 <h4>Move or reassign</h4>
 <ol>
-<li><strong>Drag</strong> bar left or right to change dates.</li>
-<li><strong>Drag</strong> to another row to reassign.</li>
+<li><strong>Drag</strong> a bar left or right to change dates.</li>
+<li><strong>Drag</strong> it to another row to reassign.</li>
 <li>Drag either <strong>end</strong> of a bar to make it longer or shorter.</li>
 </ol>
 </div>
@@ -137,39 +92,38 @@ Use the **Technician** and **Job** dropdowns.
 </ol>
 </div>
 
-
-
-<!-- CAPTURE: Assignment Detail panel open (side sheet) for one Job assignment. Save as assets/img/supervisor/assignment-detail.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/assignment-detail.png" alt="Assignment detail panel showing technician, job, dates, half day and notes" loading="lazy">
-  <figcaption>Click any bar to see full assignment.</figcaption>
+  <figcaption>Click any bar to see the full assignment.</figcaption>
 </figure>
 
+</div> </details>
 
+<details class="accordion"> <summary>Absences and privacy</summary> <div class="accordion-body">
 
-
-## Absences and privacy
-
-- Book absences as **Type = Out** and leave notes as needed. Shared pages only shows as *Out*, in gray.
-- **Supervisor Notes** are only visible to you. They will not appear on the technician's personal view. 
+- Book absences as **Type = Out** and leave notes as needed. Shared pages only show *Out*, in gray.
+- **Supervisor Notes** are only visible to you. They never appear on the technician's personal view or in the Friday email.
 - **Notes** (without "Supervisor") are visible to everyone. Use them for job details like *"Steam blowdown Sunday."*
 - **Holidays** live in their own list. They don't appear on the board yet, so book holiday days as *Out* for the techs who take them.
 
 <figure class="shot">
-  <img src="assets/img/supervisor/supervisor-notes.png">
+  <img src="assets/img/supervisor/supervisor-notes.png" alt="Assignment panel with the private Supervisor Notes field" loading="lazy">
 </figure>
 
-## Adding a new technician
+</div> </details>
+
+<details class="accordion"> <summary>Adding or removing a technician</summary> <div class="accordion-body">
 
 <ol class="chunked-list">
 <li>Everything happens on the <strong>Crew</strong> page.</li>
-
-<li>Enter their <strong>Name</strong>, <strong>Email</strong>, and <strong>Union Local</strong> and tick <strong>Active</strong>.
-<li><strong>Calendar Color</strong> automatically fills by Union Local.</li>
+<li>Enter their <strong>Name</strong> and <strong>Email</strong>, link their <strong>Employee</strong> record, and tick <strong>Active</strong>. (New hires from onboarding arrive with all of this done.)</li>
+<li><strong>Union</strong> and <strong>Home Location</strong> fill in from their Employee record, and their bar color follows the union. A union or location change goes through HR as a Role Change, and the board updates on the effective date.</li>
 <li>Book their first assignment as usual.</li>
-
-<li><strong>Someone leaving?</strong> Untick <strong>Active</strong> on the Crew page. They drop off the schedule email and the active list, but history stays intact.</li>
+<li><strong>Someone leaving?</strong> Untick <strong>Active</strong> on the Crew page. They drop off the schedule email and the active list, but their history stays intact.</li>
 </ol>
 
+<figure class="shot">
+  <img src="assets/img/supervisor/crew.png" alt="Crew page listing technicians with union local and active status" loading="lazy">
+</figure>
 
-
+</div> </details>
