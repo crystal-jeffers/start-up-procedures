@@ -25,23 +25,23 @@ Everyone else views a read-only live feed that only shows their assignments. The
   <figcaption>Timeline: who is where this week.</figcaption>
 </figure>
 <figure class="shot">
-  <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
-  <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
-</figure>
-<figure class="shot">
   <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
   <figcaption>Filter by Technician or Job. Clear the filter to see everyone again.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
+  <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
 </figure>
 </div>
 
 
 - **Rows**: One row per technician.
 - **Bars**: Each bar is one assignment.
-- **Colors:** Each technician has their own color. **Out** shows in gray.
+- **Colors:** Each technician is colored by union. **Out** shows in gray.
 - **Weekends** are hidden by default. Switch views to see weekends.
 
-**Timeline**: "who's where this week."
-**Calendar**: "what's happening on this job this month."
+**Timeline**: "who's where this week?"
+**Calendar**: "what's happening on this job this month?"
 
 
 </div> </details>
@@ -65,11 +65,16 @@ Everyone else views a read-only live feed that only shows their assignments. The
 
 <details class="accordion"> <summary>Adding, moving and splitting assignments</summary> <div class="accordion-body">
 
+<figure class="shot">
+  <img src="assets/img/supervisor/assignment-detail.png" alt="Assignment detail panel showing technician, job, dates, half day and notes" loading="lazy">
+  <figcaption>Click any bar to see the full assignment.</figcaption>
+</figure>
+
 <div class="numbered-group">
 <h4>Add an assignment</h4>
 <ol>
 <li>Click <strong>+</strong> in the technician's row.</li>
-<li>Pick the <strong>Technician</strong>, <strong>Type</strong> and <strong>Job</strong>.</li>
+<li>Pick <strong>Technician</strong>, <strong>Type</strong> and <strong>Job</strong>.</li>
 <li>Set <strong>Start Date</strong> and <strong>End Date</strong>.</li>
 <li>The label and color fill in on their own a few seconds later.</li>
 </ol>
@@ -92,23 +97,29 @@ Everyone else views a read-only live feed that only shows their assignments. The
 </ol>
 </div>
 
-<figure class="shot">
-  <img src="assets/img/supervisor/assignment-detail.png" alt="Assignment detail panel showing technician, job, dates, half day and notes" loading="lazy">
-  <figcaption>Click any bar to see the full assignment.</figcaption>
-</figure>
 
 </div> </details>
 
 <details class="accordion"> <summary>Absences and privacy</summary> <div class="accordion-body">
 
 - Book absences as **Type = Out** and leave notes as needed. Shared pages only show *Out*, in gray.
-- **Supervisor Notes** are only visible to you. They never appear on the technician's personal view or in the Friday email.
-- **Notes** (without "Supervisor") are visible to everyone. Use them for job details like *"Steam blowdown Sunday."*
-- **Holidays** live in their own list. They don't appear on the board yet, so book holiday days as *Out* for the techs who take them.
+- **Supervisor Notes** are only visible to you. They never appear on the technician's personal view.
+- **Notes** (without "Supervisor") are visible to everyone for job details like *"Steam blowdown Sunday."*
+- **Holidays** live in their own list. Book holiday days as *Out* for the techs who take them.
 
+<div class="carousel">
 <figure class="shot">
   <img src="assets/img/supervisor/supervisor-notes.png" alt="Assignment panel with the private Supervisor Notes field" loading="lazy">
 </figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/schedule-notes.png">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/holidays-list.png">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/holidays-gallery.png">
+</figure>    
 
 </div> </details>
 
