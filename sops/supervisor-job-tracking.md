@@ -25,6 +25,7 @@ The <strong>checklist</strong> is where phase tasks are logged.
 <div class="bubble-column">
 <h4 class="align-left">BACKLOG: Booked, not started.</h4>
 </div>
+</div>
 <div class="bubble-column">
 <h4 class="align-left">ACTIVE: Work underway.</h4>
 <div class="bubble">Status changes and checklist is created <strong>automatically</strong> once jobs have Job Number, Lead Tech and PM.</div>
@@ -39,10 +40,19 @@ The <strong>checklist</strong> is where phase tasks are logged.
 </div>
 </div>
 
-<!-- CAPTURE: Job Tracker, Active tab, showing Current Phase and Progress columns. Save as assets/img/supervisor/job-tracker.png -->
+<div class="carousel">
 <figure class="shot">
   <img src="assets/img/supervisor/job-tracker.png" alt="Job Tracker Active tab with current phase and progress for each job" loading="lazy">
-<figcaption>Most pressing deadline at the top. Tap to enlarge.</figcaption>
+  <figcaption>Most pressing deadline at the top. Tap to enlarge.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/job-tracker-detail.png" alt="Backlog queue." loading="lazy">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/job-tracker-backlog.png" alt="Backlog queue." loading="lazy">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/status-on-hold.png" alt="Manually adjust status for On Hold, everything else is automatic." loading="lazy">
 </figure>
 
 
@@ -83,16 +93,16 @@ Pace is measured from the job's first day on the dispatch board. If work began l
 
 
 ## Working the checklist
-
+Grouped by phase, in SOP order.
 <!-- CAPTURE: Job Checklists with one job selected, Pre-Start group expanded, a few items ticked. Save as assets/img/supervisor/job-checklist.png -->
 <figure class="shot">
   <img src="assets/img/supervisor/job-checklist.png" alt="Job Checklists page grouped by phase with Done and N/A checkboxes" loading="lazy">
 </figure>
 
-- Pick the job in the **Job** dropdown. Grouped by phase, in SOP order.
-- Tick **Done** when a step is complete. The time is stamped automatically in **Closed At**.
-- Tick **N/A** when a step doesn't apply to this job. It counts as closed.
-- Use **Notes** for anything the next person needs: who confirmed, what's outstanding.
+- Pick the job in the **Job** dropdown, or collapse to see all jobs on the page.
+- Tick **Done** when a step is complete. Time is auto-stamped in **Closed At**.
+- Tick **N/A** when a step doesn't apply to this job. (This counts as closed.)
+- Use **Notes** for anything the next person needs: what's confirmed, outstanding, etc.
 - **Recurring** steps (weekly workforce review, 24/48/72-hour checks): tick once the routine is set up or the last check is done.
 - **Checkpoint Status** reads Done, N/A, Not in scope, or Open.
 
