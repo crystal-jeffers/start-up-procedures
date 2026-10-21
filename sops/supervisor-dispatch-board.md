@@ -1,0 +1,142 @@
+# Dispatch Board
+
+Goodbye monthly spreadsheet, 
+hello Airtable dispatch board! 
+
+Each assignment is one record with a technician, job, type, and date range.
+
+> Note: Who edits? Supervisor only. Everyone else views a read-only live feed that only shows their assignments. They also get an automated email each Friday afternoon outlining their jobs for the upcoming week.
+
+
+<div class="clear"></div>
+
+<details class="accordion"> <summary>Reading the board</summary> <div class="accordion-body">
+
+<div class="carousel">
+<figure class="shot">
+  <img src="assets/img/supervisor/timeline-overview.png" alt="Dispatch Timeline showing one row per technician across two weeks" loading="lazy">
+  <figcaption>Timeline view.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/filters.png" alt="Technician and Job filter dropdowns open above the calendar" loading="lazy">
+  <figcaption>Filter by Technician or Job. (Clear the filter to see everyone again.)</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-filter-out.png" alt="Dispatch Calendar filtered to Out assignments" loading="lazy">
+  <figcaption>Calendar filtered to Out: who is off, and when.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-no-holiday.png" alt="Scheduling an appointment with no holiday conflicts." loading="lazy">
+  <figcaption>Scheduling an appointment with no holiday conflicts.</figcaption>
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/calendar-holiday.png" alt="A warning message with holiday details will appear if scheduling conflicts exist." loading="lazy">
+  <figcaption>A warning message with holiday details will appear if scheduling conflicts exist.</figcaption>
+</figure>
+</div>
+
+- **Rows**: One row per technician.
+- **Bars**: Each bar is one assignment.
+- **Colors:** Each technician is colored by union. **Out** shows in gray. **Holiday** shows in teal.
+- **Weekends** are hidden by default. Switch views to see weekends.
+
+<h4>Automated Friday Email</h4>
+<figure class="shot thumb">
+  <img src="assets/img/supervisor/my-schedule-email.png" alt="Example Friday schedule email listing one technician's assignments for next week" loading="lazy">
+  <figcaption>Each tech's Friday email. Tap to enlarge.</figcaption>
+</figure>
+
+</div> </details>
+
+<details class="accordion"> <summary>Assignment types</summary> <div class="accordion-body">
+
+<div class="table-scroll">
+<table>
+<thead><tr><th>Type</th><th>Use it for</th></tr></thead>
+<tbody>
+<tr><td>Job</td><td>Start-up work on a site</td></tr>
+<tr><td>Training</td><td>Classes, manufacturer training, owner training days</td></tr>
+<tr><td>Internal</td><td>Shop, office, service assistance</td></tr>
+<tr><td>Out</td><td>Vacation, sick, leave, holiday, etc.</td></tr>
+<tr><td>Unassigned</td><td>Available, nothing booked yet</td></tr>
+</tbody>
+</table>
+</div>
+
+</div> </details>
+
+<details class="accordion"> <summary>Adding, moving, and splitting assignments</summary> <div class="accordion-body">
+
+<figure class="shot">
+  <img src="assets/img/supervisor/assignment-detail.png" alt="Assignment detail panel showing technician, job, dates, half day and notes" loading="lazy">
+  <figcaption>Click any bar to see the full assignment.</figcaption>
+</figure>
+
+<div class="numbered-group">
+<h4>Add an assignment</h4>
+<ol>
+<li>Click <strong>+</strong> on the date or select the technician's row.</li>
+<li>Pick <strong>Technician</strong>, <strong>Type</strong>, and <strong>Job</strong>.</li>
+<li>Set <strong>Start Date</strong> and <strong>End Date</strong>.</li>
+<li>The label and color fill in on their own a few seconds later.</li>
+</ol>
+</div>
+
+<div class="numbered-group">
+<h4>Move or reassign</h4>
+<ol>
+<li><strong>Drag</strong> a bar left or right to change dates.</li>
+<li><strong>Drag</strong> it to another row to reassign.</li>
+<li>Drag either <strong>end</strong> of a bar to make it longer or shorter.</li>
+</ol>
+</div>
+
+<div class="numbered-group">
+<h4>Split a day between two sites</h4>
+<ol>
+<li>Create two assignments for that day, one for each job.</li>
+<li>Tick <strong>Half Day</strong> on both.</li>
+</ol>
+</div>
+
+
+</div> </details>
+
+<details class="accordion"> <summary>Absences and privacy</summary> <div class="accordion-body">
+
+- Book absences as **Type = Out** and leave notes as needed.
+- **Supervisor Notes** are only visible to you.
+- **Notes** (without "Supervisor") are visible to everyone for job details like *"Steam blowdown Sunday."*
+- **Holidays** live in their own list. 
+
+<div class="carousel">
+<figure class="shot">
+  <img src="assets/img/supervisor/supervisor-notes.png" alt="Assignment panel with the private Supervisor Notes field" loading="lazy">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/schedule-notes.png" alt="Schedule notes visible to everyone">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/holidays-list.png" alt="Holidays list">
+</figure>
+<figure class="shot">
+  <img src="assets/img/supervisor/holidays-gallery.png" alt="Holidays gallery">
+</figure>    
+
+</div> </details>
+
+<details class="accordion"> <summary>Adding or removing a technician</summary> <div class="accordion-body">
+
+<ol class="chunked-list">
+<li>Everything happens on the <strong>Crew</strong> page.</li>
+<li>Enter their <strong>Name</strong> and <strong>Email</strong>, link their <strong>Employee</strong> record, and tick <strong>Active</strong>. (New hires from onboarding arrive with all of this done.)</li>
+<li><strong>Union</strong> and <strong>Home Location</strong> fill in from their Employee record, and their bar color follows the union. A union or location change goes through HR as a Role Change, and the board updates on the effective date.</li>
+<li>Book their first assignment as usual.</li>
+<li><strong>Someone leaving?</strong> Untick <strong>Active</strong> on the Crew page. They drop off the schedule email and the active list, but their history stays intact.</li>
+</ol>
+
+<figure class="shot">
+  <img src="assets/img/supervisor/crew.png" alt="Crew page listing technicians with union local and active status" loading="lazy">
+</figure>
+
+</div> </details>
