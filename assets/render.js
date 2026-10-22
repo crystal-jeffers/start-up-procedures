@@ -155,7 +155,7 @@ function countFor(meta, body) {
   if (type === "timeline") { const n = (body.match(/^###\s+/gm) || []).length; return n ? n + " stages" : ""; }
   const checks = (body.match(/^\s*[-*]\s+\[[ xX]\]/gm) || []).length;
   const steps = (body.match(/^\d+\.\s+/gm) || []).length;
-  if (type === "checklist" && checks) return checks + " checks";
+  if ((type === "checklist" || type === "form") && checks) return checks + " checks";
   if (steps >= 6) return steps + " steps";
   if (checks) return checks + " checks";
   return "";
@@ -863,6 +863,7 @@ async function renderSopPage() {
   main.innerHTML = "";
   main.appendChild(art);
   buildChecklists(box);
+  if (type === "form" && window.buildForm) buildForm(box, { pageKey: pageKey, group: slugify(entry.group || "forms"), title: shown });
   markReveals(box);
   buildToc(main);
 

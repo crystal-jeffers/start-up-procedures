@@ -101,6 +101,53 @@ const SOP_LIBRARY = [
     featured: ["lead"]
   },
 
+  /* ---------- Clean and flush: HHW systems, with a record form for each stage ---------- */
+  {
+    id: "clean-flush",
+    title: "Clean and Flush",
+    blurb: "Flush, clean, and treat an HHW system, with a record form for each stage.",
+    file: "sops/clean-flush.md",
+    group: "Clean and flush",
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: ["tech", "lead"]
+  },
+  {
+    id: "clean-flush-pre-flush",
+    title: "Pre-Flush",
+    blurb: "Get the system ready and calculate its volume.",
+    file: "sops/clean-flush-pre-flush.md",
+    group: "Clean and flush",
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: []
+  },
+  {
+    id: "clean-flush-flushing",
+    title: "Flushing",
+    blurb: "Bleed and feed with ICW for at least 4 hours.",
+    file: "sops/clean-flush-flushing.md",
+    group: "Clean and flush",
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: []
+  },
+  {
+    id: "clean-flush-cleaning",
+    title: "Cleaning",
+    blurb: "Circulate cleaner, test the solution, and flush it out.",
+    file: "sops/clean-flush-cleaning.md",
+    group: "Clean and flush",
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: []
+  },
+  {
+    id: "clean-flush-treatment",
+    title: "Treatment",
+    blurb: "Charge the system with corrosion inhibitor.",
+    file: "sops/clean-flush-treatment.md",
+    group: "Clean and flush",
+    roles: ["apprentice", "tech", "lead", "supervisor"],
+    featured: []
+  },
+
   /* ---------- Reference ---------- */
   {
     id: "best-practices",
